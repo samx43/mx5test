@@ -2,8 +2,8 @@ name: 更新 MX-5 車源
 
 on:
   schedule:
-    - cron: "17 */6 * * *"
-  workflow_dispatch:
+    - cron: "17 */6 * * *"   # 每 6 小時一次（UTC 時間，錯開整點尖峰）
+  workflow_dispatch:          # 也可以在 Actions 頁面手動按「Run workflow」
 
 permissions:
   contents: write
