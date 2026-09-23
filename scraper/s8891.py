@@ -12,6 +12,19 @@ MAX_PAGES = 5
 _ID = re.compile(r"usedauto-infos-(\d+)\.html")
 _CITY_AGE = re.compile(r"([\u4e00-\u9fff]{2}[市縣])\s*\d+\s*(?:天|小時|分鐘|個月)[內前]")
 _YEAR_KM = re.compile(r"((?:19|20)\d{2})年\s*([\d.]+\s*萬?\s*公里)")
+# 車名部分只取到排氣量為止，後面通常是車商自己加的宣傳文字
+_MODEL = re.compile(r"^(Mazda\s+MX-5(?:\s+[A-Za-z0-9.\-]+款?)*)")
+
+
+def tidy_model(name):
+    """去掉 8891 車名裡重複出現的詞，例如『2.0L MT 2.0L』。"""
+    seen, out = set(), []
+    for tok in name.split():
+        if tok.lower() in seen:
+            continue
+        seen.add(tok.lower())
+        out.append(tok)
+    return " ".join(out)
 
 
 def parse_list_text(text):
@@ -20,8 +33,12 @@ def parse_list_text(text):
     out = {}
     m = _CITY_AGE.search(text)
     if m:
-        out["headline"] = text[: m.start()].strip()
+        headline = text[: m.start()].strip()
         out["location"] = m.group(1)
+        mm = _MODEL.match(headline)
+        out["headline"] = tidy_model(mm.group(1)) if mm else headline.strip()
+        rest = headline[len(mm.group(1)):].strip() if mm else ""
+        out["subtitle"] = re.sub(r"^\d\.\dL\s*", "", rest)
     ym = _YEAR_KM.search(text)
     if ym:
         out["year"] = int(ym.group(1))
@@ -94,6 +111,11 @@ def scrape(fetcher, known):
         if html is None and not known.get(f"8891-{cid}"):
             continue  # 詳細頁打不開而且以前沒看過，可能已下架
         title = info.get("headline") or re.sub(r"\s*\|.*$", "", d.get("og_title", "")) or card["text"][:40]
+        desc = info.get("subtitle") or d.get("description", "")
+        # 列表上的圖多半是「里程實拍」之類的標章，只用車輛頁面的主圖
+        photo = d.get("image")
+        if photo and not re.search(r"\.jpe?g($|\?)", photo, re.I):
+            photo = None
         items.append({
             "id": f"8891-{cid}",
             "url": detail_url,
@@ -102,8 +124,8 @@ def scrape(fetcher, known):
             "year": info.get("year") or d.get("year"),
             "mileage_km": info.get("mileage_km"),
             "location": info.get("location") or d.get("location"),
-            "description": clean_text(d.get("description", "")),
-            "images": [u for u in [card["img"], d.get("image")] if u][:2],
+            "description": clean_text(desc),
+            "images": [photo] if photo else [],
             "seller": d.get("seller"),
             "posted_at": None,
             "sold": False,

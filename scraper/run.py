@@ -11,7 +11,7 @@ import logging
 import pathlib
 import sys
 
-from . import abccar, ptt, s8891
+from . import abccar, browser, ptt, s8891
 from .common import Fetcher, generation, log, utcnow
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
@@ -86,6 +86,8 @@ def main():
         for it in items:
             it["source"], it["source_name"] = key, name
             fetched[it["id"]] = it
+
+    browser.close()  # 抓完就把無頭瀏覽器關掉
 
     for it in load_manual():
         it["source"], it["source_name"] = "manual", "手動新增"

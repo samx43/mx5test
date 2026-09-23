@@ -6,6 +6,7 @@ from urllib.parse import quote, urljoin
 
 from bs4 import BeautifulSoup
 
+from . import browser
 from .common import (clean_text, is_mx5, log, parse_mileage_km, parse_price_wan,
                      parse_year)
 
@@ -31,6 +32,23 @@ _IMGUR = re.compile(r"https?://(?:i\.|m\.)?imgur\.com/([A-Za-z0-9]{5,8})(?:\.(?:
 _DIRECT_IMG = re.compile(r"https?://[^\s\"'<>]+\.(?:jpe?g|png|webp)(?:\?[^\s\"'<>]*)?", re.I)
 
 
+class Reader:
+    """PTT 會擋掉一般的程式請求，被擋到就整個改用瀏覽器。"""
+
+    def __init__(self, fetcher):
+        self.fetcher = fetcher
+        self.use_browser = False
+
+    def get(self, url):
+        if not self.use_browser:
+            html = self.fetcher.get(url, cookies=COOKIES)
+            if html and ("r-ent" in html or "main-content" in html):
+                return html
+            log.warning("PTT 一般請求拿不到內容，改用瀏覽器")
+            self.use_browser = True
+        return browser.get_html(url, wait_selector="div.r-ent, #main-content")
+
+
 def _rows(html):
     soup = BeautifulSoup(html, "html.parser")
     out = {}
@@ -41,15 +59,15 @@ def _rows(html):
     return soup, out
 
 
-def collect_from_index(fetcher):
+def collect_from_index(reader):
     """從最新的看板頁往回翻，這是最穩定的來源。"""
     url = f"{BASE}{BOARD}/index.html"
     found, pages = {}, 0
     for _ in range(INDEX_PAGES):
-        html = fetcher.get(url, cookies=COOKIES)
+        html = reader.get(url)
         if html is None:
             if pages == 0:
-                raise RuntimeError("PTT 看板頁讀不到，可能是被擋或網站異常")
+                raise RuntimeError("PTT 看板頁讀不到，一般請求和瀏覽器都失敗")
             break
         soup, rows = _rows(html)
         found.update(rows)
@@ -60,14 +78,16 @@ def collect_from_index(fetcher):
             break
         url = urljoin(BASE, prev["href"])
     log.info("PTT：翻了 %d 頁看板，共 %d 篇文章", pages, len(found))
+    if not found:
+        raise RuntimeError("看板頁打得開，但裡面一篇文章都沒有，可能被擋或版面改了")
     return found
 
 
-def collect_from_search(fetcher):
+def collect_from_search(reader):
     found = {}
     for q in QUERIES:
         for page in range(1, SEARCH_PAGES + 1):
-            html = fetcher.get(f"{BASE}{BOARD}/search?page={page}&q={quote(q)}", cookies=COOKIES)
+            html = reader.get(f"{BASE}{BOARD}/search?page={page}&q={quote(q)}")
             if not html:
                 break
             _, rows = _rows(html)
@@ -174,9 +194,10 @@ def parse_article(html, url, list_title):
 
 
 def scrape(fetcher, known):
-    candidates = collect_from_index(fetcher)
+    reader = Reader(fetcher)
+    candidates = collect_from_index(reader)
     try:
-        candidates.update(collect_from_search(fetcher))
+        candidates.update(collect_from_search(reader))
     except Exception:
         log.warning("PTT 搜尋失敗，只用看板列表的結果", exc_info=True)
 
@@ -188,7 +209,7 @@ def scrape(fetcher, known):
         pid = re.search(r"M\.(\d+)\.A", url)
         if pid and time.time() - int(pid.group(1)) > MAX_AGE_DAYS * 86400:
             continue
-        html = fetcher.get(url, cookies=COOKIES)
+        html = reader.get(url)
         if not html:
             continue
         try:

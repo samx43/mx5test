@@ -5,41 +5,30 @@ import re
 
 from bs4 import BeautifulSoup
 
-from .common import UA, clean_text, is_mx5, log, parse_mileage_km, parse_price_wan, parse_year
+from . import browser
+from .common import clean_text, is_mx5, log, parse_mileage_km, parse_price_wan, parse_year
 
 SEARCH_URL = "https://www.abccar.com.tw/search?tab=1&brand=108&series=389"
 DETAIL_URL = "https://www.abccar.com.tw/Car/{}"
 _ID = re.compile(r"/car/(\d+)", re.I)
 
 
+MAX_DETAILS = 30
+
+
 def collect_ids():
-    try:
-        from playwright.sync_api import sync_playwright
-    except ImportError:
-        raise RuntimeError("沒有安裝 Playwright，略過 abc好車網")
-    with sync_playwright() as p:
-        browser = p.chromium.launch()
-        page = browser.new_page(user_agent=UA, locale="zh-TW")
-        # 這個網站有持續連線的元件，networkidle 可能永遠等不到，改成等車輛連結出現
-        page.goto(SEARCH_URL, wait_until="domcontentloaded", timeout=60000)
-        try:
-            page.wait_for_selector('a[href*="/Car/"], a[href*="/car/"]', timeout=30000)
-        except Exception:
-            log.warning("abc好車網：等不到車輛連結，可能是版面改了或被擋")
-        for _ in range(6):  # 往下捲動，觸發延遲載入
-            page.mouse.wheel(0, 4000)
-            page.wait_for_timeout(1500)
-        hrefs = page.eval_on_selector_all("a[href]", "els => els.map(e => e.href)")
-        browser.close()
+    """搜尋頁是 JavaScript 產生的，用瀏覽器開啟後再取出車輛連結。"""
+    html = browser.get_html(SEARCH_URL, wait_selector='a[href*="/Car/"], a[href*="/car/"]', scroll=6)
+    if html is None:
+        raise RuntimeError("搜尋頁開不起來（瀏覽器讀取失敗）")
     ids = []
-    for h in hrefs:
-        m = _ID.search(h)
-        if m and m.group(1) not in ids:
+    for m in _ID.finditer(html):
+        if m.group(1) not in ids:
             ids.append(m.group(1))
     if not ids:
-        raise RuntimeError(f"搜尋頁沒有抓到任何車輛連結（頁面上共 {len(hrefs)} 個連結）")
+        raise RuntimeError("搜尋頁沒有抓到任何車輛連結，版面可能改了")
     log.info("abc好車網：找到 %d 個車輛連結", len(ids))
-    return ids
+    return ids[:MAX_DETAILS]
 
 
 def parse_detail(html):
@@ -74,14 +63,18 @@ def parse_detail(html):
 
 
 def scrape(fetcher, known):
-    items = []
-    for cid in collect_ids():
+    ids = collect_ids()
+    items, blocked, not_mx5 = [], 0, 0
+    for cid in ids:
         url = DETAIL_URL.format(cid)
-        html = fetcher.get(url)
+        # 這個網站會擋掉一般的程式請求，車輛頁面也要用瀏覽器開
+        html = browser.get_html(url)
         if not html:
+            blocked += 1
             continue
         d = parse_detail(html)
         if not d:
+            not_mx5 += 1
             continue  # 搜尋頁上的推薦車款不是 MX-5
         items.append({
             "id": f"abccar-{cid}",
@@ -97,5 +90,7 @@ def scrape(fetcher, known):
             "posted_at": None,
             "sold": False,
         })
-    log.info("abc好車網：%d 筆", len(items))
+    log.info("abc好車網：%d 筆（%d 頁讀不到、%d 頁不是 MX-5）", len(items), blocked, not_mx5)
+    if not items:
+        raise RuntimeError(f"{len(ids)} 個連結都沒有解析成功（讀不到 {blocked} 頁、非 MX-5 {not_mx5} 頁）")
     return items
