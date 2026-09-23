@@ -20,10 +20,15 @@ def collect_ids():
     with sync_playwright() as p:
         browser = p.chromium.launch()
         page = browser.new_page(user_agent=UA, locale="zh-TW")
-        page.goto(SEARCH_URL, wait_until="networkidle", timeout=60000)
+        # 這個網站有持續連線的元件，networkidle 可能永遠等不到，改成等車輛連結出現
+        page.goto(SEARCH_URL, wait_until="domcontentloaded", timeout=60000)
+        try:
+            page.wait_for_selector('a[href*="/Car/"], a[href*="/car/"]', timeout=30000)
+        except Exception:
+            log.warning("abc好車網：等不到車輛連結，可能是版面改了或被擋")
         for _ in range(6):  # 往下捲動，觸發延遲載入
             page.mouse.wheel(0, 4000)
-            page.wait_for_timeout(1200)
+            page.wait_for_timeout(1500)
         hrefs = page.eval_on_selector_all("a[href]", "els => els.map(e => e.href)")
         browser.close()
     ids = []
@@ -31,6 +36,9 @@ def collect_ids():
         m = _ID.search(h)
         if m and m.group(1) not in ids:
             ids.append(m.group(1))
+    if not ids:
+        raise RuntimeError(f"搜尋頁沒有抓到任何車輛連結（頁面上共 {len(hrefs)} 個連結）")
+    log.info("abc好車網：找到 %d 個車輛連結", len(ids))
     return ids
 
 

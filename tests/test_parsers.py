@@ -81,3 +81,53 @@ def test_abccar_detail():
     assert d["mileage_km"] == 101000 and d["location"] == "台中市" and d["seller"] == "好車行"
     assert d["description"] == "車況佳 原鈑件"
     assert abccar.parse_detail(html.replace("MX-5", "CX-5")) is None
+
+
+REAL_POST = """<div id="main-content"><div class="article-metaline"><span class="article-meta-tag">作者</span><span class="article-meta-value">jason731124 (jason)</span></div>
+<div class="article-metaline-right"><span class="article-meta-tag">看板</span><span class="article-meta-value">CarShop</span></div>
+<div class="article-metaline"><span class="article-meta-tag">標題</span><span class="article-meta-value">[售車] 2024MX5硬頂+recaro椅</span></div>
+<div class="article-metaline"><span class="article-meta-tag">時間</span><span class="article-meta-value">Wed Jun  3 22:08:57 2026</span></div>
+車輛品牌/產地/出廠年月：2024年7月
+
+車款型式/排氣量：Mazda MX5硬頂+recaro座椅
+
+顏色/排檔形式：原色天際灰，全車內外貼混動紅
+
+有無調表/實際里程：無調表、8422KM增加中
+
+欲售售價：130萬（誠可議）
+
+原使用情形：自用一手
+
+交易地區/聯絡方式：台中/站內信 + (電話/line/推文)
+
+實際照片：
+
+<a href="https://i.meee.com.tw/gNuKIt4.jpg">https://i.meee.com.tw/gNuKIt4.jpg</a>
+
+--
+※ 發信站: 批踢踢實業坊(ptt.cc)
+</div>"""
+
+
+def test_real_ptt_post():
+    it = ptt.parse_article(REAL_POST, "https://www.ptt.cc/bbs/CarShop/M.1780000000.A.ABC.html", "")
+    assert ptt.wanted("[售車] 2024MX5硬頂+recaro椅")
+    assert it["price"] == 130
+    assert it["year"] == 2024
+    assert it["mileage_km"] == 8422
+    assert it["location"] == "台中"
+    assert it["images"] == ["https://i.meee.com.tw/gNuKIt4.jpg"]
+    assert "天際灰" in it["description"] and "站內信" not in it["description"]
+    assert it["seller"] == "jason731124"
+
+
+def test_index_rows():
+    html = """<div class="r-ent"><div class="title"><a href="/bbs/CarShop/M.1780000000.A.ABC.html">[售車] 2024MX5硬頂+recaro椅</a></div></div>
+    <div class="r-ent"><div class="title">(本文已被刪除)</div></div>
+    <div class="r-ent"><div class="title"><a href="/bbs/CarShop/M.1780000001.A.DEF.html">[購車] 徵 MX-5</a></div></div>
+    <div class="btn-group btn-group-paging"><a class="btn wide" href="/bbs/CarShop/index2100.html">‹ 上頁</a></div>"""
+    soup, rows = ptt._rows(html)
+    assert len(rows) == 2
+    assert [t for t in rows.values() if ptt.wanted(t)] == ["[售車] 2024MX5硬頂+recaro椅"]
+    assert soup.select("div.btn-group-paging a")[0]["href"].endswith("index2100.html")

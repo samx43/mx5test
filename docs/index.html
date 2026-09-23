@@ -203,6 +203,7 @@ footer p { margin: 0 0 6px; max-width: 72ch; }
   <footer>
     <p>資料每 6 小時自動從 PTT CarShop、8891、abc好車網整理一次。價格和車況以原始刊登為準，看車前請直接聯絡賣家確認。</p>
     <p>連續兩輪都找不到的車會標成已下架，30 天後移除。</p>
+    <p id="sourcecounts"></p>
   </footer>
 </div>
 
@@ -351,8 +352,15 @@ footer p { margin: 0 0 6px; max-width: 72ch; }
       $("updated").textContent = "尚未更新過。";
     }
     if (data.seed) notes.push("第一次自動更新完成後，會換成 PTT、8891、abc好車網的完整結果。");
-    Object.values(data.sources || {}).filter((s) => !s.ok).forEach((s) =>
-      notes.push(`${esc(s.name)} 這一輪沒有抓到資料，列表中保留的是上一輪的結果。`));
+    const srcs = Object.values(data.sources || {});
+    srcs.filter((s) => !s.ok).forEach((s) =>
+      notes.push(`${esc(s.name)} 這一輪沒有抓到資料${s.error ? `（${esc(s.error)}）` : ""}，列表中保留的是上一輪的結果。`));
+    srcs.filter((s) => s.ok && !s.count).forEach((s) =>
+      notes.push(`${esc(s.name)} 這一輪找到 0 筆，可能是沒有新的刊登，也可能是抓取規則要調整。`));
+    if (srcs.length) {
+      $("sourcecounts").textContent = "這一輪：" + srcs.map((s) =>
+        `${s.name} ${s.ok ? s.count + " 筆" : "失敗"}`).join("，");
+    }
     $("notices").innerHTML = notes.map((n) => `<p class="notice">${n}</p>`).join("");
   }
 
