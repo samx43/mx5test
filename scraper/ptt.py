@@ -6,7 +6,7 @@ from urllib.parse import quote, urljoin
 
 from bs4 import BeautifulSoup
 
-from . import browser
+from . import browser, pttweb
 from .common import (clean_text, is_mx5, log, parse_mileage_km, parse_price_wan,
                      parse_year)
 
@@ -193,9 +193,34 @@ def parse_article(html, url, list_title):
     }
 
 
+def scrape_via_pttweb(fetcher):
+    """ptt.cc 連不上時，改用第三方網頁版 pttweb.cc。"""
+    titles = pttweb.collect(fetcher)
+    hits = {aid: t for aid, t in titles.items() if wanted(t)}
+    log.info("pttweb：%d 篇標題符合 MX-5 售車", len(hits))
+    items = []
+    for aid, title in hits.items():
+        ts = re.search(r"M\.(\d+)\.A", aid)
+        if ts and time.time() - int(ts.group(1)) > MAX_AGE_DAYS * 86400:
+            continue
+        html = pttweb.fetch(fetcher, pttweb.article_url(aid))
+        if not html:
+            continue
+        try:
+            items.append(pttweb.parse_article(html, aid, title))
+        except Exception:
+            log.exception("pttweb 文章解析失敗 %s", aid)
+    log.info("pttweb：收錄 %d 筆", len(items))
+    return items
+
+
 def scrape(fetcher, known):
     reader = Reader(fetcher)
-    candidates = collect_from_index(reader)
+    try:
+        candidates = collect_from_index(reader)
+    except Exception as e:
+        log.warning("ptt.cc 讀不到（%s），改用 pttweb.cc", e)
+        return scrape_via_pttweb(fetcher)
     try:
         candidates.update(collect_from_search(reader))
     except Exception:

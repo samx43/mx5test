@@ -21,14 +21,25 @@ def collect_ids():
     html = browser.get_html(SEARCH_URL, wait_selector='a[href*="/Car/"], a[href*="/car/"]', scroll=6)
     if html is None:
         raise RuntimeError("搜尋頁開不起來（瀏覽器讀取失敗）")
+    soup = BeautifulSoup(html, "html.parser")
     ids = []
-    for m in _ID.finditer(html):
-        if m.group(1) not in ids:
+    for a in soup.find_all("a", href=True):          # 只看真正的連結，不掃整份原始碼
+        m = _ID.search(a["href"])
+        if m and len(m.group(1)) >= 5 and m.group(1) not in ids:
             ids.append(m.group(1))
+    if not ids:                                       # 版面若改用其他標籤，退回掃原始碼
+        for m in _ID.finditer(html):
+            if len(m.group(1)) >= 5 and m.group(1) not in ids:
+                ids.append(m.group(1))
     if not ids:
         raise RuntimeError("搜尋頁沒有抓到任何車輛連結，版面可能改了")
     log.info("abc好車網：找到 %d 個車輛連結", len(ids))
     return ids[:MAX_DETAILS]
+
+
+def page_title(html):
+    soup = BeautifulSoup(html, "html.parser")
+    return clean_text(soup.title.get_text() if soup.title else "", 80)
 
 
 def parse_detail(html):
@@ -64,7 +75,7 @@ def parse_detail(html):
 
 def scrape(fetcher, known):
     ids = collect_ids()
-    items, blocked, not_mx5 = [], 0, 0
+    items, blocked, not_mx5, samples = [], 0, 0, []
     for cid in ids:
         url = DETAIL_URL.format(cid)
         # 這個網站會擋掉一般的程式請求，車輛頁面也要用瀏覽器開
@@ -75,7 +86,9 @@ def scrape(fetcher, known):
         d = parse_detail(html)
         if not d:
             not_mx5 += 1
-            continue  # 搜尋頁上的推薦車款不是 MX-5
+            if len(samples) < 3:   # 記下實際讀到的頁面標題，方便判斷是被擋還是版面改了
+                samples.append(f"{cid}：{page_title(html) or '（沒有標題）'}")
+            continue
         items.append({
             "id": f"abccar-{cid}",
             "url": url,
@@ -92,5 +105,7 @@ def scrape(fetcher, known):
         })
     log.info("abc好車網：%d 筆（%d 頁讀不到、%d 頁不是 MX-5）", len(items), blocked, not_mx5)
     if not items:
-        raise RuntimeError(f"{len(ids)} 個連結都沒有解析成功（讀不到 {blocked} 頁、非 MX-5 {not_mx5} 頁）")
+        raise RuntimeError(
+            f"{len(ids)} 個連結都沒有解析成功（讀不到 {blocked} 頁、非 MX-5 {not_mx5} 頁）"
+            + ("；實際讀到的頁面：" + "；".join(samples) if samples else ""))
     return items
