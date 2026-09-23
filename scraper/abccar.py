@@ -8,7 +8,13 @@ from bs4 import BeautifulSoup
 from . import browser
 from .common import clean_text, is_mx5, log, parse_mileage_km, parse_price_wan, parse_year
 
-SEARCH_URL = "https://www.abccar.com.tw/search?tab=1&brand=108&series=389"
+# 只給 series 參數時，網站會忽略車款篩選、回傳整個 Mazda 品牌的車，
+# 所以要帶上 SeriesGroup。依序嘗試，哪一個先抓到 MX-5 就用哪一個。
+SEARCH_URLS = [
+    "https://www.abccar.com.tw/Search?tab=1&brand=108&SeriesGroup=338&series=389",
+    "https://www.abccar.com.tw/Search?tab=1&SearchType=1&brand=108&SeriesGroup=338&OrderByField=0",
+    "https://www.abccar.com.tw/search?tab=1&brand=108&series=389",
+]
 DETAIL_URL = "https://www.abccar.com.tw/Car/{}"
 _ID = re.compile(r"/car/(\d+)", re.I)
 
@@ -16,25 +22,48 @@ _ID = re.compile(r"/car/(\d+)", re.I)
 MAX_DETAILS = 30
 
 
+def cards(html):
+    """回傳 [(車輛編號, 卡片上的文字)]。卡片文字用來先篩掉別款車。"""
+    soup = BeautifulSoup(html, "html.parser")
+    out, seen = [], set()
+    for a in soup.find_all("a", href=True):
+        m = _ID.search(a["href"])
+        if not m or len(m.group(1)) < 5 or m.group(1) in seen:
+            continue
+        seen.add(m.group(1))
+        node, text = a, a.get_text(" ", strip=True)
+        for _ in range(4):  # 車名有時放在外層，往上找到最近一層有文字的祖先就停
+            if len(text) >= 10:
+                break
+            node = node.parent
+            if node is None:
+                break
+            text = node.get_text(" ", strip=True)
+        out.append((m.group(1), clean_text(text, 120)))
+    return out
+
+
 def collect_ids():
     """搜尋頁是 JavaScript 產生的，用瀏覽器開啟後再取出車輛連結。"""
-    html = browser.get_html(SEARCH_URL, wait_selector='a[href*="/Car/"], a[href*="/car/"]', scroll=6)
-    if html is None:
-        raise RuntimeError("搜尋頁開不起來（瀏覽器讀取失敗）")
-    soup = BeautifulSoup(html, "html.parser")
-    ids = []
-    for a in soup.find_all("a", href=True):          # 只看真正的連結，不掃整份原始碼
-        m = _ID.search(a["href"])
-        if m and len(m.group(1)) >= 5 and m.group(1) not in ids:
-            ids.append(m.group(1))
-    if not ids:                                       # 版面若改用其他標籤，退回掃原始碼
-        for m in _ID.finditer(html):
-            if len(m.group(1)) >= 5 and m.group(1) not in ids:
-                ids.append(m.group(1))
-    if not ids:
-        raise RuntimeError("搜尋頁沒有抓到任何車輛連結，版面可能改了")
-    log.info("abc好車網：找到 %d 個車輛連結", len(ids))
-    return ids[:MAX_DETAILS]
+    tried, best = [], []
+    for url in SEARCH_URLS:
+        html = browser.get_html(url, wait_selector='a[href*="/Car/"], a[href*="/car/"]', scroll=6)
+        if not html:
+            tried.append(f"{url} 開不起來")
+            continue
+        found = cards(html)
+        hits = [cid for cid, text in found if is_mx5(text)]
+        log.info("abc好車網：%s 找到 %d 個連結，其中 %d 個看起來是 MX-5",
+                 url.split("?")[-1], len(found), len(hits))
+        if hits:
+            return hits[:MAX_DETAILS]
+        if len(found) > len(best):
+            best = found
+        tried.append(f"{url} 只找到 {len(found)} 個連結、沒有 MX-5")
+    if best:  # 卡片上看不出車款時，仍然開幾頁進去確認
+        log.warning("abc好車網：卡片文字判斷不出車款，改開前 12 個連結確認")
+        return [cid for cid, _ in best[:12]]
+    raise RuntimeError("搜尋頁抓不到任何車輛連結（" + "；".join(tried) + "）")
 
 
 def page_title(html):
