@@ -1,11 +1,10 @@
 {
- "updated_at": "2026-09-23T09:31:33+00:00",
+ "updated_at": "2026-09-23T09:48:42+00:00",
  "sources": {
   "ptt": {
    "name": "PTT CarShop",
-   "ok": false,
-   "count": 0,
-   "error": "看板頁打得開，但裡面一篇文章都沒有，可能被擋或版面改了"
+   "ok": true,
+   "count": 1
   },
   "8891": {
    "name": "8891",
@@ -16,10 +15,34 @@
    "name": "abc好車網",
    "ok": false,
    "count": 0,
-   "error": "30 個連結都沒有解析成功（讀不到 0 頁、非 MX-5 30 頁）"
+   "error": "30 個連結都沒有解析成功（讀不到 0 頁、非 MX-5 30 頁）；實際讀到的頁面：2311674：Mazda CX-9 2.5 SKY-G 2WD 旗艦型 2018年 中古車(二手車) 58.8萬 - 元禾國際車業 陳店長 - abc好車網；2331145：Mazda 3 4D 2.0尊榮安全版 2017年 中古車(二手車) 23.8萬 - 錦鑫汽車 - abc好車網；2324968：Mazd"
   }
  },
  "items": [
+  {
+   "id": "ptt-M.1789713399.A.3AE",
+   "url": "https://www.ptt.cc/bbs/CarShop/M.1789713399.A.3AE.html",
+   "title": "Mazda mx-5",
+   "price": null,
+   "year": 2023,
+   "mileage_km": 12000,
+   "location": "台南",
+   "description": "[售車] Mazda mx-5 - 看板CarShop - PTT網頁版 PTT 網頁版 登入/註冊 新聞 熱門文章 熱門看板 看板列表 作者查詢 最新文章 我的收藏 最近瀏覽 看板名稱查詢 批踢踢 PTT 搜尋引擎 [售車] Mazda mx-5 已刪文 ＋收藏 分享 看板 CarShop 作者 shoes123 …",
+   "images": [
+    "https://i.mopix.cc/gYDnQ5.jpg",
+    "https://i.mopix.cc/YuHmUo.jpg"
+   ],
+   "seller": "shoes123",
+   "posted_at": "2026-09-18T06:36:39+00:00",
+   "source": "ptt",
+   "source_name": "PTT CarShop",
+   "generation": "ND",
+   "first_seen": "2026-09-23T09:48:42+00:00",
+   "last_seen": "2026-09-23T09:48:42+00:00",
+   "missed": 0,
+   "price_history": [],
+   "status": "active"
+  },
   {
    "id": "8891-4806939",
    "url": "https://auto.8891.com.tw/usedauto-infos-4806939.html",
@@ -29,16 +52,14 @@
    "mileage_km": 3000,
    "location": "台南市",
    "description": "【欣榮汽車】2025年式 MAZDA MX-5 ND3 RF",
-   "images": [
-    "https://photo.8891.com.tw/2026/09/18/17897328877530309595.jpg"
-   ],
+   "images": [],
    "seller": null,
    "posted_at": null,
    "source": "8891",
    "source_name": "8891",
    "generation": "ND",
    "first_seen": "2026-09-22T06:00:00+00:00",
-   "last_seen": "2026-09-23T09:31:33+00:00",
+   "last_seen": "2026-09-23T09:48:42+00:00",
    "missed": 0,
    "price_history": [],
    "status": "active"
@@ -52,14 +73,16 @@
    "mileage_km": 61000,
    "location": "新北市",
    "description": "百週年紀念版本 履約保證「原鈑件、里程保證、無重大事故、無泡水」",
-   "images": [],
-   "seller": null,
+   "images": [
+    "https://photo.8891.com.tw/2026/09/15/17894498698196281903.jpg"
+   ],
+   "seller": "",
    "posted_at": null,
    "source": "8891",
    "source_name": "8891",
    "generation": "ND",
    "first_seen": "2026-09-22T06:00:00+00:00",
-   "last_seen": "2026-09-23T09:31:33+00:00",
+   "last_seen": "2026-09-23T09:48:42+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -85,7 +108,7 @@
    "source_name": "8891",
    "generation": "ND",
    "first_seen": "2026-09-22T06:00:00+00:00",
-   "last_seen": "2026-09-23T09:31:33+00:00",
+   "last_seen": "2026-09-23T09:48:42+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -104,16 +127,14 @@
    "mileage_km": 16000,
    "location": "新北市",
    "description": "原廠手排、出手排就要買!、實跑一萬、外觀小升級",
-   "images": [
-    "https://photo.8891.com.tw/2026/08/10/17863491443648541692.jpg"
-   ],
+   "images": [],
    "seller": null,
    "posted_at": null,
    "source": "8891",
    "source_name": "8891",
    "generation": "ND",
    "first_seen": "2026-09-22T06:00:00+00:00",
-   "last_seen": "2026-09-23T09:31:33+00:00",
+   "last_seen": "2026-09-23T09:48:42+00:00",
    "missed": 0,
    "price_history": [],
    "status": "active"
@@ -134,7 +155,7 @@
    "source_name": "8891",
    "generation": "ND",
    "first_seen": "2026-09-22T06:00:00+00:00",
-   "last_seen": "2026-09-23T09:31:33+00:00",
+   "last_seen": "2026-09-23T09:48:42+00:00",
    "missed": 0,
    "price_history": [],
    "status": "active"
@@ -155,7 +176,7 @@
    "source_name": "8891",
    "generation": "ND",
    "first_seen": "2026-09-22T06:00:00+00:00",
-   "last_seen": "2026-09-23T09:31:33+00:00",
+   "last_seen": "2026-09-23T09:48:42+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -174,16 +195,14 @@
    "mileage_km": 13000,
    "location": "桃園市",
    "description": "",
-   "images": [
-    "https://photo.8891.com.tw/2026/08/24/17875732535474885705.jpg"
-   ],
-   "seller": "宇盟國際",
+   "images": [],
+   "seller": null,
    "posted_at": null,
    "source": "8891",
    "source_name": "8891",
    "generation": "ND",
    "first_seen": "2026-09-22T06:00:00+00:00",
-   "last_seen": "2026-09-23T09:31:33+00:00",
+   "last_seen": "2026-09-23T09:48:42+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -210,7 +229,7 @@
    "generation": "ND",
    "first_seen": "2026-09-22T06:00:00+00:00",
    "last_seen": "2026-09-22T06:00:00+00:00",
-   "missed": 3,
+   "missed": 4,
    "price_history": [
     {
      "date": "2026-09-22T06:00:00+00:00",
