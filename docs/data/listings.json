@@ -1,0 +1,206 @@
+{
+ "updated_at": "2026-09-22T06:00:00+00:00",
+ "seed": true,
+ "sources": {
+  "8891": {
+   "name": "8891",
+   "ok": true,
+   "count": 8
+  }
+ },
+ "items": [
+  {
+   "id": "8891-4806939",
+   "url": "https://auto.8891.com.tw/usedauto-infos-4806939.html",
+   "title": "Mazda MX-5 2025款 ND3 RF 2.0L",
+   "price": null,
+   "year": 2024,
+   "mileage_km": 3000,
+   "location": "台南市",
+   "description": "【欣榮汽車】2025年式 MAZDA MX-5 ND3 RF",
+   "images": [],
+   "seller": null,
+   "posted_at": null,
+   "source": "8891",
+   "source_name": "8891",
+   "generation": "ND",
+   "first_seen": "2026-09-22T06:00:00+00:00",
+   "last_seen": "2026-09-22T06:00:00+00:00",
+   "missed": 0,
+   "price_history": [],
+   "status": "active"
+  },
+  {
+   "id": "8891-4803348",
+   "url": "https://auto.8891.com.tw/usedauto-infos-4803348.html",
+   "title": "Mazda MX-5 2021款 2.0L MT",
+   "price": 98.0,
+   "year": 2021,
+   "mileage_km": 61000,
+   "location": "新北市",
+   "description": "百週年紀念版本，履約保證：原鈑件、里程保證、無重大事故、無泡水",
+   "images": [],
+   "seller": null,
+   "posted_at": null,
+   "source": "8891",
+   "source_name": "8891",
+   "generation": "ND",
+   "first_seen": "2026-09-22T06:00:00+00:00",
+   "last_seen": "2026-09-22T06:00:00+00:00",
+   "missed": 0,
+   "price_history": [
+    {
+     "date": "2026-09-22T06:00:00+00:00",
+     "price": 98.0
+    }
+   ],
+   "status": "active"
+  },
+  {
+   "id": "8891-4802945",
+   "url": "https://auto.8891.com.tw/usedauto-infos-4802945.html",
+   "title": "Mazda MX-5 2025款 2.0L RF",
+   "price": 139.8,
+   "year": 2024,
+   "mileage_km": 7000,
+   "location": "新北市",
+   "description": "Recaro 座椅（選配加價）、原鈑原漆、全原廠保養、原廠保固中、25 年式",
+   "images": [],
+   "seller": null,
+   "posted_at": null,
+   "source": "8891",
+   "source_name": "8891",
+   "generation": "ND",
+   "first_seen": "2026-09-22T06:00:00+00:00",
+   "last_seen": "2026-09-22T06:00:00+00:00",
+   "missed": 0,
+   "price_history": [
+    {
+     "date": "2026-09-22T06:00:00+00:00",
+     "price": 139.8
+    }
+   ],
+   "status": "active"
+  },
+  {
+   "id": "8891-4801004",
+   "url": "https://auto.8891.com.tw/usedauto-infos-4801004.html",
+   "title": "Mazda MX-5 2022款 2.0L MT",
+   "price": null,
+   "year": 2022,
+   "mileage_km": 16000,
+   "location": "新北市",
+   "description": "原廠手排、實跑一萬、外觀小升級",
+   "images": [],
+   "seller": null,
+   "posted_at": null,
+   "source": "8891",
+   "source_name": "8891",
+   "generation": "ND",
+   "first_seen": "2026-09-22T06:00:00+00:00",
+   "last_seen": "2026-09-22T06:00:00+00:00",
+   "missed": 0,
+   "price_history": [],
+   "status": "active"
+  },
+  {
+   "id": "8891-4800872",
+   "url": "https://auto.8891.com.tw/usedauto-infos-4800872.html",
+   "title": "Mazda MX-5 2018款 2.0L RF 旗艦型",
+   "price": 93.8,
+   "year": 2018,
+   "mileage_km": 50000,
+   "location": "桃園市",
+   "description": "",
+   "images": [],
+   "seller": null,
+   "posted_at": null,
+   "source": "8891",
+   "source_name": "8891",
+   "generation": "ND",
+   "first_seen": "2026-09-22T06:00:00+00:00",
+   "last_seen": "2026-09-22T06:00:00+00:00",
+   "missed": 0,
+   "price_history": [
+    {
+     "date": "2026-09-22T06:00:00+00:00",
+     "price": 93.8
+    }
+   ],
+   "status": "active"
+  },
+  {
+   "id": "8891-4800801",
+   "url": "https://auto.8891.com.tw/usedauto-infos-4800801.html",
+   "title": "Mazda MX-5 2021款 2.0L MT",
+   "price": null,
+   "year": 2021,
+   "mileage_km": 18000,
+   "location": "台北市",
+   "description": "【內湖有為汽車】百週年紀念款，白車紅棚市場稀少，全程原廠保養",
+   "images": [],
+   "seller": null,
+   "posted_at": null,
+   "source": "8891",
+   "source_name": "8891",
+   "generation": "ND",
+   "first_seen": "2026-09-22T06:00:00+00:00",
+   "last_seen": "2026-09-22T06:00:00+00:00",
+   "missed": 0,
+   "price_history": [],
+   "status": "active"
+  },
+  {
+   "id": "8891-4798212",
+   "url": "https://auto.8891.com.tw/usedauto-infos-4798212.html",
+   "title": "Mazda MX-5 2020款 2.0L",
+   "price": 113.8,
+   "year": 2020,
+   "mileage_km": 14000,
+   "location": "桃園市",
+   "description": "可加 LINE 視訊確認，歡迎賞車議價",
+   "images": [],
+   "seller": null,
+   "posted_at": null,
+   "source": "8891",
+   "source_name": "8891",
+   "generation": "ND",
+   "first_seen": "2026-09-22T06:00:00+00:00",
+   "last_seen": "2026-09-22T06:00:00+00:00",
+   "missed": 0,
+   "price_history": [
+    {
+     "date": "2026-09-22T06:00:00+00:00",
+     "price": 113.8
+    }
+   ],
+   "status": "active"
+  },
+  {
+   "id": "8891-4781636",
+   "url": "https://auto.8891.com.tw/usedauto-infos-4781636.html",
+   "title": "Mazda MX-5 2022款 2.0L MT",
+   "price": 109.0,
+   "year": 2022,
+   "mileage_km": 13000,
+   "location": "桃園市",
+   "description": "",
+   "images": [],
+   "seller": null,
+   "posted_at": null,
+   "source": "8891",
+   "source_name": "8891",
+   "generation": "ND",
+   "first_seen": "2026-09-22T06:00:00+00:00",
+   "last_seen": "2026-09-22T06:00:00+00:00",
+   "missed": 0,
+   "price_history": [
+    {
+     "date": "2026-09-22T06:00:00+00:00",
+     "price": 109.0
+    }
+   ],
+   "status": "active"
+  }
+ ]
+}

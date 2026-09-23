@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>台灣二手 MX-5 車源</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏁</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --sky: #E3ECF1;
+  --paper: #FFFFFF;
+  --ink: #14202C;
+  --slate: #56687A;
+  --line: #C8D5DE;
+  --soul: #A0161F;
+  --soul-wash: #F6E3E4;
+  --sans: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", system-ui, sans-serif;
+  --cond: "Barlow Condensed", "Arial Narrow", "Noto Sans TC", sans-serif;
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --sky: #0E1720; --paper: #16212C; --ink: #E6EDF2; --slate: #93A5B5;
+    --line: #2A3A49; --soul: #E4535C; --soul-wash: #3A1C21;
+  }
+}
+:root[data-theme="dark"] {
+  --sky: #0E1720; --paper: #16212C; --ink: #E6EDF2; --slate: #93A5B5;
+  --line: #2A3A49; --soul: #E4535C; --soul-wash: #3A1C21;
+}
+* { box-sizing: border-box; }
+:root { padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); }
+body {
+  margin: 0; background: var(--sky); color: var(--ink);
+  font: 400 16px/1.6 var(--sans);
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 1080px; margin: 0 auto; padding: 0 20px; }
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--soul); outline-offset: 2px; }
+
+/* ---------- 頁首 ---------- */
+header { padding: 36px 0 20px; }
+h1 { font-size: 1.75rem; line-height: 1.25; margin: 0 0 6px; font-weight: 700; letter-spacing: .02em; }
+.updated { margin: 0; color: var(--slate); font-size: .95rem; }
+.notice {
+  margin: 14px 0 0; padding: 10px 14px; border-left: 3px solid var(--soul);
+  background: var(--paper); font-size: .95rem; max-width: 72ch;
+}
+
+/* ---------- 代數時間軸（主視覺） ---------- */
+.gens { margin: 18px 0 8px; }
+.gen-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; border-top: 2px solid var(--ink); }
+.gen {
+  appearance: none; border: 0; background: transparent; color: var(--ink); cursor: pointer;
+  text-align: left; padding: 10px 14px 16px 0; font-family: var(--sans);
+  border-right: 1px solid var(--line); position: relative;
+}
+.gen + .gen { padding-left: 16px; }
+.gen:last-child { border-right: 0; }
+.gen::before { /* 時間軸上的刻度 */
+  content: ""; position: absolute; top: -7px; left: 0; width: 2px; height: 12px; background: var(--ink);
+}
+.gen + .gen::before { left: 0; }
+.gen .code {
+  display: block; font: 700 clamp(3.2rem, 9vw, 6.5rem)/0.9 var(--cond);
+  letter-spacing: -0.01em; color: var(--line); transition: color .15s;
+}
+.gen:hover .code { color: var(--slate); }
+.gen[aria-pressed="true"] .code { color: var(--soul); }
+.gen .years { display: block; font: 600 1.05rem/1.2 var(--cond); letter-spacing: .03em; color: var(--slate); margin-top: 6px; }
+.gen .stat { display: block; font-size: .92rem; margin-top: 4px; }
+.gen .stat b { font: 600 1.25rem/1 var(--cond); }
+.gen .range { display: block; font-size: .85rem; color: var(--slate); }
+.gen-hint { font-size: .85rem; color: var(--slate); margin: 6px 0 0; }
+
+/* ---------- 篩選列 ---------- */
+.filters {
+  display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: end;
+  padding: 16px 0; border-bottom: 1px solid var(--line); margin-bottom: 8px;
+}
+.field { display: flex; flex-direction: column; gap: 4px; font-size: .85rem; color: var(--slate); }
+.field input[type="search"], .field input[type="number"], .field select {
+  font: 400 1rem var(--sans); color: var(--ink); background: var(--paper);
+  border: 1px solid var(--line); border-radius: 6px; padding: 7px 10px; min-height: 40px;
+}
+.field input[type="search"] { width: 230px; }
+.field input[type="number"] { width: 84px; }
+.price-range { display: flex; align-items: center; gap: 6px; color: var(--ink); }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { position: relative; }
+.chip input { position: absolute; opacity: 0; inset: 0; margin: 0; cursor: pointer; }
+.chip span {
+  display: inline-flex; align-items: center; padding: 0 14px; border-radius: 999px; min-height: 40px; line-height: 1.3; white-space: nowrap;
+  border: 1px solid var(--line); background: var(--paper); color: var(--slate); font-size: .9rem;
+}
+.chip input:checked + span { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.chip input:focus-visible + span { outline: 3px solid var(--soul); outline-offset: 2px; }
+.toggle { display: flex; align-items: center; gap: 8px; font-size: .92rem; color: var(--ink); min-height: 40px; }
+.toggle input { width: 18px; height: 18px; accent-color: var(--soul); }
+.count { margin: 10px 0 4px; color: var(--slate); font-size: .95rem; display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.linkbtn { appearance: none; border: 0; background: none; color: var(--ink); text-decoration: underline; cursor: pointer; font: inherit; padding: 0; }
+
+/* ---------- 車源列表 ---------- */
+.list { list-style: none; margin: 0 0 48px; padding: 0; }
+.car {
+  display: grid; grid-template-columns: 208px 1fr auto; gap: 18px;
+  padding: 16px 0; border-bottom: 1px solid var(--line); align-items: start;
+}
+.photo {
+  display: block; aspect-ratio: 4 / 3; width: 100%; border-radius: 4px; overflow: hidden;
+  background: var(--paper);
+}
+.photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.photo svg { width: 100%; height: 100%; display: block; color: var(--line); }
+.info h2 { font-size: 1.08rem; line-height: 1.45; margin: 0 0 6px; font-weight: 700; }
+.info h2 a { text-decoration: none; }
+.info h2 a:hover { text-decoration: underline; }
+.facts { display: flex; flex-wrap: wrap; gap: 4px 16px; margin: 0 0 6px; padding: 0; list-style: none; font-size: .93rem; }
+.facts li b { font: 600 1.08rem var(--cond); letter-spacing: .02em; }
+.desc { margin: 0 0 8px; color: var(--slate); font-size: .92rem; max-width: 62ch;
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.meta { font-size: .84rem; color: var(--slate); display: flex; flex-wrap: wrap; gap: 4px 14px; }
+.src { font-weight: 500; color: var(--ink); }
+.genbadge { font: 700 .95rem var(--cond); letter-spacing: .04em; border: 1.5px solid currentColor; border-radius: 3px; padding: 0 5px; }
+.price { text-align: right; min-width: 128px; }
+.price .num { font: 700 2.4rem/1 var(--cond); letter-spacing: -.01em; }
+.price .unit { font-size: .95rem; margin-left: 2px; }
+.price .ask { font: 600 1.5rem/1 var(--cond); color: var(--slate); }
+.tag { display: inline-block; margin-top: 8px; font-size: .82rem; padding: 2px 8px; border-radius: 3px; }
+.tag.drop { background: var(--soul-wash); color: var(--soul); font-weight: 700; }
+.tag.new { border: 1px solid var(--ink); }
+.tag.off { background: var(--line); color: var(--ink); }
+.car.inactive .photo, .car.inactive .info h2, .car.inactive .price .num { opacity: .5; }
+.open { display: inline-block; margin-top: 10px; font-size: .9rem; font-weight: 500; }
+
+.empty { padding: 48px 0; text-align: left; max-width: 52ch; }
+.empty p { margin: 0 0 12px; }
+
+footer { padding: 24px 0 40px; color: var(--slate); font-size: .85rem; border-top: 1px solid var(--line); }
+footer p { margin: 0 0 6px; max-width: 72ch; }
+
+@media (max-width: 760px) {
+  .gen-row { grid-template-columns: repeat(2, 1fr); border-top: 0; }
+  .gen { border-top: 2px solid var(--ink); border-right: 0; padding-left: 0 !important; padding-right: 12px; }
+  .gen:nth-child(odd) { border-right: 1px solid var(--line); }
+  .gen:nth-child(even) { padding-left: 14px !important; }
+  .car { grid-template-columns: 116px 1fr; gap: 12px; }
+  .price { grid-column: 2; text-align: left; min-width: 0; }
+  .price .num { font-size: 2rem; }
+  .desc { -webkit-line-clamp: 3; }
+  .field input[type="search"] { width: 100%; }
+  .field.search { flex: 1 1 100%; }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>台灣二手 MX-5 車源</h1>
+    <p class="updated" id="updated">讀取中…</p>
+    <div id="notices"></div>
+  </header>
+
+  <section class="gens" aria-label="依代數篩選">
+    <div class="gen-row" id="gens"></div>
+    <p class="gen-hint">點代數可以篩選，再點一次取消。可以同時選多個。</p>
+  </section>
+
+  <div class="filters" role="search">
+    <label class="field search">關鍵字
+      <input type="search" id="q" placeholder="RF、手排、百週年、台中…">
+    </label>
+    <div class="field">價格（萬）
+      <span class="price-range">
+        <input type="number" id="pmin" inputmode="decimal" min="0" placeholder="最低" aria-label="最低價格（萬）">
+        到
+        <input type="number" id="pmax" inputmode="decimal" min="0" placeholder="最高" aria-label="最高價格（萬）">
+      </span>
+    </div>
+    <div class="field">來源
+      <div class="chips" id="sources"></div>
+    </div>
+    <label class="field">排序
+      <select id="sort">
+        <option value="new">最新發現</option>
+        <option value="price-asc">價格低到高</option>
+        <option value="price-desc">價格高到低</option>
+        <option value="year-desc">年份新到舊</option>
+        <option value="km-asc">里程少到多</option>
+      </select>
+    </label>
+    <label class="toggle"><input type="checkbox" id="showInactive"> 顯示已售出和已下架</label>
+  </div>
+
+  <div class="count"><span id="count"></span><button class="linkbtn" id="reset" hidden>清除所有篩選</button></div>
+  <ul class="list" id="list"></ul>
+
+  <footer>
+    <p>資料每 6 小時自動從 PTT CarShop、8891、abc好車網整理一次。價格和車況以原始刊登為準，看車前請直接聯絡賣家確認。</p>
+    <p>連續兩輪都找不到的車會標成已下架，30 天後移除。</p>
+  </footer>
+</div>
+
+<script>
+(() => {
+  const GENS = [
+    { code: "NA", years: "1989–1997" },
+    { code: "NB", years: "1998–2005" },
+    { code: "NC", years: "2005–2015" },
+    { code: "ND", years: "2015–" },
+  ];
+  const state = { items: [], gens: new Set(), sources: new Set(), q: "", pmin: null, pmax: null, sort: "new", showInactive: false, seed: false };
+  const $ = (id) => document.getElementById(id);
+
+  const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const safeUrl = (u) => (typeof u === "string" && /^https?:\/\//i.test(u) ? u : null);
+  const fmtNum = (n) => (Number.isInteger(n) ? String(n) : n.toFixed(1));
+  const fmtKm = (km) => (km >= 10000 ? `${fmtNum(Math.round(km / 1000) / 10)} 萬公里` : `${km.toLocaleString("zh-TW")} 公里`);
+  const hoursSince = (iso) => (Date.now() - new Date(iso).getTime()) / 36e5;
+  const fmtDate = (d) => `${d.getMonth() + 1}月${d.getDate()}日 ${String(d.getHours()).padStart(2, "0")}:${String(d.getMinutes()).padStart(2, "0")}`;
+  function ago(iso) {
+    const h = hoursSince(iso);
+    if (h < 1) return "剛剛";
+    if (h < 24) return `${Math.floor(h)} 小時前`;
+    return `${Math.floor(h / 24)} 天前`;
+  }
+
+  const placeholder = `<svg viewBox="0 0 160 120" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+    d="M18 78 C22 70 34 66 48 64 L62 56 C68 52 76 51 84 52 L96 60 C112 61 130 64 140 70 C144 73 145 77 144 80 L132 81 M58 81 L102 81 M26 81 L20 80 C17 80 16 79 18 78"/>
+    <circle cx="44" cy="82" r="11" fill="none" stroke="currentColor" stroke-width="3"/><circle cx="118" cy="82" r="11" fill="none" stroke="currentColor" stroke-width="3"/></svg>`;
+
+  function drop(it) {
+    const h = it.price_history || [];
+    if (h.length < 2) return 0;
+    const d = h[0].price - h[h.length - 1].price;
+    return d > 0 ? Math.round(d * 10) / 10 : 0;
+  }
+  const isActive = (it) => it.status === "active";
+
+  function filtered() {
+    const q = state.q.trim().toLowerCase();
+    let out = state.items.filter((it) => {
+      if (!state.showInactive && !isActive(it)) return false;
+      if (state.gens.size && !state.gens.has(it.generation)) return false;
+      if (state.sources.size && !state.sources.has(it.source)) return false;
+      if (state.pmin != null && !(it.price >= state.pmin)) return false;
+      if (state.pmax != null && !(it.price != null && it.price <= state.pmax)) return false;
+      if (q) {
+        const hay = [it.title, it.description, it.location, it.seller, it.generation, it.year].join(" ").toLowerCase();
+        if (!q.split(/\s+/).every((w) => hay.includes(w))) return false;
+      }
+      return true;
+    });
+    const nullsLast = (a, b, f) => (f(a) == null) - (f(b) == null);
+    const sorters = {
+      "new": (a, b) => (isActive(b) - isActive(a)) || String(b.first_seen).localeCompare(String(a.first_seen)),
+      "price-asc": (a, b) => nullsLast(a, b, (x) => x.price) || a.price - b.price,
+      "price-desc": (a, b) => nullsLast(a, b, (x) => x.price) || b.price - a.price,
+      "year-desc": (a, b) => nullsLast(a, b, (x) => x.year) || b.year - a.year,
+      "km-asc": (a, b) => nullsLast(a, b, (x) => x.mileage_km) || a.mileage_km - b.mileage_km,
+    };
+    return out.sort(sorters[state.sort]);
+  }
+
+  function renderGens() {
+    const pool = state.items.filter((it) => state.showInactive || isActive(it));
+    $("gens").innerHTML = GENS.map((g) => {
+      const cars = pool.filter((it) => it.generation === g.code);
+      const prices = cars.map((c) => c.price).filter((p) => p != null);
+      const range = prices.length ? `${fmtNum(Math.min(...prices))}–${fmtNum(Math.max(...prices))} 萬` : "目前沒有標價";
+      return `<button class="gen" type="button" data-gen="${g.code}" aria-pressed="${state.gens.has(g.code)}">
+        <span class="code">${g.code}</span>
+        <span class="years">${g.years}</span>
+        <span class="stat"><b>${cars.length}</b> 台</span>
+        <span class="range">${cars.length ? range : "暫時沒有車源"}</span>
+      </button>`;
+    }).join("");
+  }
+
+  function renderCar(it) {
+    const url = safeUrl(it.url);
+    const img = (it.images || []).map(safeUrl).find(Boolean);
+    const facts = [];
+    if (it.year) facts.push(`<li><b>${it.year}</b> 年</li>`);
+    if (it.mileage_km) facts.push(`<li><b>${esc(fmtKm(it.mileage_km))}</b></li>`);
+    if (it.location) facts.push(`<li>${esc(it.location)}</li>`);
+    const d = drop(it);
+    const tags = [];
+    if (it.status === "sold") tags.push(`<span class="tag off">已售出</span>`);
+    else if (it.status === "gone") tags.push(`<span class="tag off">已下架</span>`);
+    else {
+      if (d) tags.push(`<span class="tag drop">降價 ${fmtNum(d)} 萬</span>`);
+      if (!state.seed && hoursSince(it.first_seen) < 48) tags.push(`<span class="tag new">新上架</span>`);
+    }
+    const price = it.price != null
+      ? `<span class="num">${fmtNum(it.price)}</span><span class="unit">萬</span>`
+      : `<span class="ask">電洽</span>`;
+    const link = (inner, cls = "") => url ? `<a class="${cls}" href="${esc(url)}" target="_blank" rel="noopener noreferrer">${inner}</a>` : inner;
+    return `<li class="car${isActive(it) ? "" : " inactive"}">
+      ${link(img ? `<img src="${esc(img)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.replaceWith(document.createRange().createContextualFragment(window.__ph))">` : placeholder, "photo")}
+      <div class="info">
+        <h2>${link(esc(it.title || "（無標題）"))}</h2>
+        ${facts.length ? `<ul class="facts">${facts.join("")}</ul>` : ""}
+        ${it.description ? `<p class="desc">${esc(it.description)}</p>` : ""}
+        <div class="meta">
+          ${it.generation ? `<span class="genbadge">${esc(it.generation)}</span>` : ""}
+          <span class="src">${esc(it.source_name || it.source)}</span>
+          ${it.seller ? `<span>${esc(it.seller)}</span>` : ""}
+          <span>${state.seed ? "建站時收錄" : `發現於 ${ago(it.first_seen)}`}</span>
+        </div>
+      </div>
+      <div class="price">${price}<div>${tags.join(" ")}</div>
+        ${url ? `<a class="open" href="${esc(url)}" target="_blank" rel="noopener noreferrer">看原始刊登</a>` : ""}
+      </div>
+    </li>`;
+  }
+
+  function render() {
+    renderGens();
+    const rows = filtered();
+    const anyFilter = state.gens.size || state.sources.size || state.q || state.pmin != null || state.pmax != null;
+    $("reset").hidden = !anyFilter;
+    $("count").textContent = `符合條件 ${rows.length} 台`;
+    $("list").innerHTML = rows.length ? rows.map(renderCar).join("") : `<li class="empty">
+      <p>${state.items.length ? "沒有符合條件的車。可以放寬價格範圍，或取消代數和來源篩選。" : "目前還沒有任何車源資料。第一次自動更新完成後就會出現。"}</p>
+      ${anyFilter ? `<button class="linkbtn" type="button" data-reset>清除所有篩選</button>` : ""}</li>`;
+  }
+
+  function renderSources(sources) {
+    const keys = [...new Set(state.items.map((i) => i.source))];
+    const names = Object.fromEntries(state.items.map((i) => [i.source, i.source_name || i.source]));
+    Object.entries(sources || {}).forEach(([k, v]) => { if (!keys.includes(k)) keys.push(k); names[k] = v.name; });
+    $("sources").innerHTML = keys.map((k) =>
+      `<label class="chip"><input type="checkbox" value="${esc(k)}"><span>${esc(names[k])}</span></label>`).join("");
+  }
+
+  function renderHeader(data) {
+    const notes = [];
+    if (data.updated_at) {
+      const t = new Date(data.updated_at);
+      const next = new Date(t.getTime() + 6 * 36e5);
+      $("updated").textContent = data.seed
+        ? "目前顯示的是建站時手動收錄的 8891 資料。"
+        : `資料更新於 ${fmtDate(t)}，下一次大約在 ${fmtDate(next)}。`;
+    } else {
+      $("updated").textContent = "尚未更新過。";
+    }
+    if (data.seed) notes.push("第一次自動更新完成後，會換成 PTT、8891、abc好車網的完整結果。");
+    Object.values(data.sources || {}).filter((s) => !s.ok).forEach((s) =>
+      notes.push(`${esc(s.name)} 這一輪沒有抓到資料，列表中保留的是上一輪的結果。`));
+    $("notices").innerHTML = notes.map((n) => `<p class="notice">${n}</p>`).join("");
+  }
+
+  function resetFilters() {
+    state.gens.clear(); state.sources.clear(); state.q = ""; state.pmin = state.pmax = null;
+    $("q").value = ""; $("pmin").value = ""; $("pmax").value = "";
+    document.querySelectorAll("#sources input").forEach((i) => (i.checked = false));
+    render();
+  }
+
+  window.__ph = placeholder;
+  $("gens").addEventListener("click", (e) => {
+    const b = e.target.closest(".gen"); if (!b) return;
+    const g = b.dataset.gen;
+    state.gens.has(g) ? state.gens.delete(g) : state.gens.add(g);
+    render();
+    document.querySelector(`.gen[data-gen="${g}"]`)?.focus();
+  });
+  $("sources").addEventListener("change", (e) => {
+    const v = e.target.value; e.target.checked ? state.sources.add(v) : state.sources.delete(v); render();
+  });
+  $("q").addEventListener("input", (e) => { state.q = e.target.value; render(); });
+  const num = (v) => (v === "" ? null : Number(v));
+  $("pmin").addEventListener("input", (e) => { state.pmin = num(e.target.value); render(); });
+  $("pmax").addEventListener("input", (e) => { state.pmax = num(e.target.value); render(); });
+  $("sort").addEventListener("change", (e) => { state.sort = e.target.value; render(); });
+  $("showInactive").addEventListener("change", (e) => { state.showInactive = e.target.checked; render(); });
+  $("reset").addEventListener("click", resetFilters);
+  $("list").addEventListener("click", (e) => { if (e.target.closest("[data-reset]")) resetFilters(); });
+
+  fetch("data/listings.json", { cache: "no-cache" })
+    .then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then((data) => {
+      state.items = data.items || [];
+      state.seed = !!data.seed;
+      renderHeader(data);
+      renderSources(data.sources);
+      render();
+    })
+    .catch(() => {
+      $("updated").textContent = "讀不到資料檔 data/listings.json。";
+      $("notices").innerHTML = `<p class="notice">如果是直接在電腦上雙擊開啟 index.html，瀏覽器會擋掉讀取。請改用 GitHub Pages 的網址，或照 README 的方式在本機預覽。</p>`;
+      renderGens(); $("list").innerHTML = "";
+    });
+})();
+</script>
+</body>
+</html>
