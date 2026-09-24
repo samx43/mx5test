@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-09-23T21:32:29+00:00",
+ "updated_at": "2026-09-24T04:55:57+00:00",
  "sources": {
   "ptt": {
    "name": "PTT CarShop",
@@ -36,7 +36,7 @@
    "source_name": "abc好車網",
    "generation": "ND",
    "first_seen": "2026-09-23T10:45:45+00:00",
-   "last_seen": "2026-09-23T21:32:29+00:00",
+   "last_seen": "2026-09-24T04:55:57+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -64,7 +64,7 @@
    "source_name": "abc好車網",
    "generation": "ND",
    "first_seen": "2026-09-23T10:45:45+00:00",
-   "last_seen": "2026-09-23T21:32:29+00:00",
+   "last_seen": "2026-09-24T04:55:57+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -92,7 +92,7 @@
    "source_name": "abc好車網",
    "generation": "NC",
    "first_seen": "2026-09-23T10:45:45+00:00",
-   "last_seen": "2026-09-23T21:32:29+00:00",
+   "last_seen": "2026-09-24T04:55:57+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -120,7 +120,7 @@
    "source_name": "abc好車網",
    "generation": "ND",
    "first_seen": "2026-09-23T10:45:45+00:00",
-   "last_seen": "2026-09-23T21:32:29+00:00",
+   "last_seen": "2026-09-24T04:55:57+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -148,7 +148,7 @@
    "source_name": "abc好車網",
    "generation": "ND",
    "first_seen": "2026-09-23T10:45:45+00:00",
-   "last_seen": "2026-09-23T21:32:29+00:00",
+   "last_seen": "2026-09-24T04:55:57+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -176,7 +176,7 @@
    "source_name": "abc好車網",
    "generation": "ND",
    "first_seen": "2026-09-23T10:45:45+00:00",
-   "last_seen": "2026-09-23T21:32:29+00:00",
+   "last_seen": "2026-09-24T04:55:57+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -204,7 +204,7 @@
    "source_name": "abc好車網",
    "generation": "ND",
    "first_seen": "2026-09-23T10:45:45+00:00",
-   "last_seen": "2026-09-23T21:32:29+00:00",
+   "last_seen": "2026-09-24T04:55:57+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -232,7 +232,7 @@
    "source_name": "abc好車網",
    "generation": "ND",
    "first_seen": "2026-09-23T10:45:45+00:00",
-   "last_seen": "2026-09-23T21:32:29+00:00",
+   "last_seen": "2026-09-24T04:55:57+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -260,7 +260,7 @@
    "source_name": "abc好車網",
    "generation": "ND",
    "first_seen": "2026-09-23T10:45:45+00:00",
-   "last_seen": "2026-09-23T21:32:29+00:00",
+   "last_seen": "2026-09-24T04:55:57+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -288,7 +288,7 @@
    "source_name": "abc好車網",
    "generation": "ND",
    "first_seen": "2026-09-23T10:45:45+00:00",
-   "last_seen": "2026-09-23T21:32:29+00:00",
+   "last_seen": "2026-09-24T04:55:57+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -316,7 +316,7 @@
    "source_name": "abc好車網",
    "generation": "ND",
    "first_seen": "2026-09-23T10:45:45+00:00",
-   "last_seen": "2026-09-23T21:32:29+00:00",
+   "last_seen": "2026-09-24T04:55:57+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -344,7 +344,7 @@
    "source_name": "abc好車網",
    "generation": "ND",
    "first_seen": "2026-09-23T10:45:45+00:00",
-   "last_seen": "2026-09-23T21:32:29+00:00",
+   "last_seen": "2026-09-24T04:55:57+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -373,7 +373,7 @@
    "source_name": "PTT CarShop",
    "generation": "ND",
    "first_seen": "2026-09-23T09:48:42+00:00",
-   "last_seen": "2026-09-23T21:32:29+00:00",
+   "last_seen": "2026-09-24T04:55:57+00:00",
    "missed": 0,
    "price_history": [],
    "status": "active"
@@ -387,16 +387,14 @@
    "mileage_km": 3000,
    "location": "台南市",
    "description": "【欣榮汽車】2025年式 MAZDA MX-5 ND3 RF",
-   "images": [
-    "https://photo.8891.com.tw/2026/09/18/17897328877530309595.jpg"
-   ],
+   "images": [],
    "seller": null,
    "posted_at": null,
    "source": "8891",
    "source_name": "8891",
    "generation": "ND",
    "first_seen": "2026-09-22T06:00:00+00:00",
-   "last_seen": "2026-09-23T21:32:29+00:00",
+   "last_seen": "2026-09-24T04:55:57+00:00",
    "missed": 0,
    "price_history": [],
    "status": "active"
@@ -417,7 +415,7 @@
    "source_name": "8891",
    "generation": "ND",
    "first_seen": "2026-09-22T06:00:00+00:00",
-   "last_seen": "2026-09-23T21:32:29+00:00",
+   "last_seen": "2026-09-24T04:55:57+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -443,7 +441,7 @@
    "source_name": "8891",
    "generation": "ND",
    "first_seen": "2026-09-22T06:00:00+00:00",
-   "last_seen": "2026-09-23T21:32:29+00:00",
+   "last_seen": "2026-09-24T04:55:57+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -462,16 +460,14 @@
    "mileage_km": 16000,
    "location": "新北市",
    "description": "原廠手排、出手排就要買!、實跑一萬、外觀小升級",
-   "images": [
-    "https://photo.8891.com.tw/2026/08/10/17863491443648541692.jpg"
-   ],
+   "images": [],
    "seller": null,
    "posted_at": null,
    "source": "8891",
    "source_name": "8891",
    "generation": "ND",
    "first_seen": "2026-09-22T06:00:00+00:00",
-   "last_seen": "2026-09-23T21:32:29+00:00",
+   "last_seen": "2026-09-24T04:55:57+00:00",
    "missed": 0,
    "price_history": [],
    "status": "active"
@@ -492,7 +488,7 @@
    "source_name": "8891",
    "generation": "ND",
    "first_seen": "2026-09-22T06:00:00+00:00",
-   "last_seen": "2026-09-23T21:32:29+00:00",
+   "last_seen": "2026-09-24T04:55:57+00:00",
    "missed": 0,
    "price_history": [],
    "status": "active"
@@ -513,7 +509,7 @@
    "source_name": "8891",
    "generation": "ND",
    "first_seen": "2026-09-22T06:00:00+00:00",
-   "last_seen": "2026-09-23T21:32:29+00:00",
+   "last_seen": "2026-09-24T04:55:57+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -539,7 +535,7 @@
    "source_name": "8891",
    "generation": "ND",
    "first_seen": "2026-09-22T06:00:00+00:00",
-   "last_seen": "2026-09-23T21:32:29+00:00",
+   "last_seen": "2026-09-24T04:55:57+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -566,7 +562,7 @@
    "generation": "ND",
    "first_seen": "2026-09-22T06:00:00+00:00",
    "last_seen": "2026-09-22T06:00:00+00:00",
-   "missed": 7,
+   "missed": 8,
    "price_history": [
     {
      "date": "2026-09-22T06:00:00+00:00",
