@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-09-27T21:23:24+00:00",
+ "updated_at": "2026-09-28T05:28:23+00:00",
  "sources": {
   "ptt": {
    "name": "PTT CarShop",
@@ -9,7 +9,7 @@
   "8891": {
    "name": "8891",
    "ok": true,
-   "count": 9
+   "count": 8
   },
   "abccar": {
    "name": "abc好車網",
@@ -19,9 +19,32 @@
  },
  "items": [
   {
+   "id": "8891-4813898",
+   "url": "https://auto.8891.com.tw/usedauto-infos-4813898.html",
+   "title": "Mazda MX-5 2025款 ND3 RF",
+   "price": null,
+   "year": 2024,
+   "mileage_km": 7000,
+   "location": "台南市",
+   "description": "選配RECARO 2.0L 【欣榮汽車】2025年式 MAZDA MX-5 ND3 RF",
+   "images": [
+    "https://photo.8891.com.tw/2026/09/26/17903923113423197902.jpg"
+   ],
+   "seller": null,
+   "posted_at": null,
+   "source": "8891",
+   "source_name": "8891",
+   "generation": "ND",
+   "first_seen": "2026-09-28T05:28:23+00:00",
+   "last_seen": "2026-09-28T05:28:23+00:00",
+   "missed": 0,
+   "price_history": [],
+   "status": "active"
+  },
+  {
    "id": "8891-4814490",
    "url": "https://auto.8891.com.tw/usedauto-infos-4814490.html",
-   "title": "39 人在看 Mazda MX-5 2019款 2.0L MT 2.0L 實車實價,來電0922112341可加LINE視訊確認,歡迎賞車!!",
+   "title": "76 人在看 Mazda MX-5 2019款 2.0L MT 2.0L 實車實價,來電0922112341可加LINE視訊確認,歡迎賞車!!",
    "price": 105.8,
    "year": 2019,
    "mileage_km": 25000,
@@ -34,7 +57,7 @@
    "source_name": "8891",
    "generation": "ND",
    "first_seen": "2026-09-27T12:07:11+00:00",
-   "last_seen": "2026-09-27T21:23:24+00:00",
+   "last_seen": "2026-09-28T05:28:23+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -60,7 +83,7 @@
    "source_name": "8891",
    "generation": "ND",
    "first_seen": "2026-09-27T12:07:11+00:00",
-   "last_seen": "2026-09-27T21:23:24+00:00",
+   "last_seen": "2026-09-28T05:28:23+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -88,7 +111,7 @@
    "source_name": "abc好車網",
    "generation": "ND",
    "first_seen": "2026-09-23T10:45:45+00:00",
-   "last_seen": "2026-09-27T21:23:24+00:00",
+   "last_seen": "2026-09-28T05:28:23+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -116,7 +139,7 @@
    "source_name": "abc好車網",
    "generation": "ND",
    "first_seen": "2026-09-23T10:45:45+00:00",
-   "last_seen": "2026-09-27T21:23:24+00:00",
+   "last_seen": "2026-09-28T05:28:23+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -144,7 +167,7 @@
    "source_name": "abc好車網",
    "generation": "NC",
    "first_seen": "2026-09-23T10:45:45+00:00",
-   "last_seen": "2026-09-27T21:23:24+00:00",
+   "last_seen": "2026-09-28T05:28:23+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -172,7 +195,7 @@
    "source_name": "abc好車網",
    "generation": "ND",
    "first_seen": "2026-09-23T10:45:45+00:00",
-   "last_seen": "2026-09-27T21:23:24+00:00",
+   "last_seen": "2026-09-28T05:28:23+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -200,7 +223,7 @@
    "source_name": "abc好車網",
    "generation": "ND",
    "first_seen": "2026-09-23T10:45:45+00:00",
-   "last_seen": "2026-09-27T21:23:24+00:00",
+   "last_seen": "2026-09-28T05:28:23+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -228,7 +251,7 @@
    "source_name": "abc好車網",
    "generation": "ND",
    "first_seen": "2026-09-23T10:45:45+00:00",
-   "last_seen": "2026-09-27T21:23:24+00:00",
+   "last_seen": "2026-09-28T05:28:23+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -256,7 +279,7 @@
    "source_name": "abc好車網",
    "generation": "ND",
    "first_seen": "2026-09-23T10:45:45+00:00",
-   "last_seen": "2026-09-27T21:23:24+00:00",
+   "last_seen": "2026-09-28T05:28:23+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -284,7 +307,7 @@
    "source_name": "abc好車網",
    "generation": "ND",
    "first_seen": "2026-09-23T10:45:45+00:00",
-   "last_seen": "2026-09-27T21:23:24+00:00",
+   "last_seen": "2026-09-28T05:28:23+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -312,7 +335,7 @@
    "source_name": "abc好車網",
    "generation": "ND",
    "first_seen": "2026-09-23T10:45:45+00:00",
-   "last_seen": "2026-09-27T21:23:24+00:00",
+   "last_seen": "2026-09-28T05:28:23+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -340,7 +363,7 @@
    "source_name": "abc好車網",
    "generation": "ND",
    "first_seen": "2026-09-23T10:45:45+00:00",
-   "last_seen": "2026-09-27T21:23:24+00:00",
+   "last_seen": "2026-09-28T05:28:23+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -368,7 +391,7 @@
    "source_name": "abc好車網",
    "generation": "ND",
    "first_seen": "2026-09-23T10:45:45+00:00",
-   "last_seen": "2026-09-27T21:23:24+00:00",
+   "last_seen": "2026-09-28T05:28:23+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -397,7 +420,7 @@
    "generation": "ND",
    "first_seen": "2026-09-23T10:45:45+00:00",
    "last_seen": "2026-09-26T05:03:01+00:00",
-   "missed": 7,
+   "missed": 8,
    "price_history": [
     {
      "date": "2026-09-23T10:45:45+00:00",
@@ -426,7 +449,7 @@
    "source_name": "PTT CarShop",
    "generation": "ND",
    "first_seen": "2026-09-23T09:48:42+00:00",
-   "last_seen": "2026-09-27T21:23:24+00:00",
+   "last_seen": "2026-09-28T05:28:23+00:00",
    "missed": 0,
    "price_history": [],
    "status": "active"
@@ -447,7 +470,7 @@
    "source_name": "8891",
    "generation": "ND",
    "first_seen": "2026-09-22T06:00:00+00:00",
-   "last_seen": "2026-09-27T21:23:24+00:00",
+   "last_seen": "2026-09-28T05:28:23+00:00",
    "missed": 0,
    "price_history": [],
    "status": "active"
@@ -468,12 +491,87 @@
    "source_name": "8891",
    "generation": "ND",
    "first_seen": "2026-09-22T06:00:00+00:00",
-   "last_seen": "2026-09-27T21:23:24+00:00",
+   "last_seen": "2026-09-28T05:28:23+00:00",
    "missed": 0,
    "price_history": [
     {
      "date": "2026-09-22T06:00:00+00:00",
      "price": 98.0
+    }
+   ],
+   "status": "active"
+  },
+  {
+   "id": "8891-4801004",
+   "url": "https://auto.8891.com.tw/usedauto-infos-4801004.html",
+   "title": "Mazda MX-5 2022款 2.0L MT",
+   "price": null,
+   "year": 2022,
+   "mileage_km": 16000,
+   "location": "新北市",
+   "description": "原廠手排、出手排就要買!、實跑一萬、外觀小升級",
+   "images": [],
+   "seller": null,
+   "posted_at": null,
+   "source": "8891",
+   "source_name": "8891",
+   "generation": "ND",
+   "first_seen": "2026-09-22T06:00:00+00:00",
+   "last_seen": "2026-09-28T05:28:23+00:00",
+   "missed": 0,
+   "price_history": [],
+   "status": "active"
+  },
+  {
+   "id": "8891-4798212",
+   "url": "https://auto.8891.com.tw/usedauto-infos-4798212.html",
+   "title": "Mazda MX-5 2020款 2.0L",
+   "price": 113.8,
+   "year": 2020,
+   "mileage_km": 14000,
+   "location": "桃園市",
+   "description": "來電0933107198可加LINE視訊確認,歡迎賞車議價!!",
+   "images": [],
+   "seller": null,
+   "posted_at": null,
+   "source": "8891",
+   "source_name": "8891",
+   "generation": "ND",
+   "first_seen": "2026-09-22T06:00:00+00:00",
+   "last_seen": "2026-09-28T05:28:23+00:00",
+   "missed": 0,
+   "price_history": [
+    {
+     "date": "2026-09-22T06:00:00+00:00",
+     "price": 113.8
+    }
+   ],
+   "status": "active"
+  },
+  {
+   "id": "8891-4781636",
+   "url": "https://auto.8891.com.tw/usedauto-infos-4781636.html",
+   "title": "Mazda MX-5 2022款 2.0L MT",
+   "price": 109.0,
+   "year": 2022,
+   "mileage_km": 13000,
+   "location": "桃園市",
+   "description": "",
+   "images": [
+    "https://photo.8891.com.tw/2026/08/24/17875732535474885705.jpg"
+   ],
+   "seller": "宇盟國際",
+   "posted_at": null,
+   "source": "8891",
+   "source_name": "8891",
+   "generation": "ND",
+   "first_seen": "2026-09-22T06:00:00+00:00",
+   "last_seen": "2026-09-28T05:28:23+00:00",
+   "missed": 0,
+   "price_history": [
+    {
+     "date": "2026-09-22T06:00:00+00:00",
+     "price": 109.0
     }
    ],
    "status": "active"
@@ -497,34 +595,13 @@
    "generation": "ND",
    "first_seen": "2026-09-22T06:00:00+00:00",
    "last_seen": "2026-09-27T21:23:24+00:00",
-   "missed": 0,
+   "missed": 1,
    "price_history": [
     {
      "date": "2026-09-22T06:00:00+00:00",
      "price": 139.8
     }
    ],
-   "status": "active"
-  },
-  {
-   "id": "8891-4801004",
-   "url": "https://auto.8891.com.tw/usedauto-infos-4801004.html",
-   "title": "Mazda MX-5 2022款 2.0L MT",
-   "price": null,
-   "year": 2022,
-   "mileage_km": 16000,
-   "location": "新北市",
-   "description": "原廠手排、出手排就要買!、實跑一萬、外觀小升級",
-   "images": [],
-   "seller": null,
-   "posted_at": null,
-   "source": "8891",
-   "source_name": "8891",
-   "generation": "ND",
-   "first_seen": "2026-09-22T06:00:00+00:00",
-   "last_seen": "2026-09-27T21:23:24+00:00",
-   "missed": 0,
-   "price_history": [],
    "status": "active"
   },
   {
@@ -544,60 +621,8 @@
    "generation": "ND",
    "first_seen": "2026-09-22T06:00:00+00:00",
    "last_seen": "2026-09-27T21:23:24+00:00",
-   "missed": 0,
+   "missed": 1,
    "price_history": [],
-   "status": "active"
-  },
-  {
-   "id": "8891-4798212",
-   "url": "https://auto.8891.com.tw/usedauto-infos-4798212.html",
-   "title": "Mazda MX-5 2020款 2.0L",
-   "price": 113.8,
-   "year": 2020,
-   "mileage_km": 14000,
-   "location": "桃園市",
-   "description": "來電0933107198可加LINE視訊確認,歡迎賞車議價!!",
-   "images": [],
-   "seller": null,
-   "posted_at": null,
-   "source": "8891",
-   "source_name": "8891",
-   "generation": "ND",
-   "first_seen": "2026-09-22T06:00:00+00:00",
-   "last_seen": "2026-09-27T21:23:24+00:00",
-   "missed": 0,
-   "price_history": [
-    {
-     "date": "2026-09-22T06:00:00+00:00",
-     "price": 113.8
-    }
-   ],
-   "status": "active"
-  },
-  {
-   "id": "8891-4781636",
-   "url": "https://auto.8891.com.tw/usedauto-infos-4781636.html",
-   "title": "Mazda MX-5 2022款 2.0L MT",
-   "price": 109.0,
-   "year": 2022,
-   "mileage_km": 13000,
-   "location": "桃園市",
-   "description": "",
-   "images": [],
-   "seller": null,
-   "posted_at": null,
-   "source": "8891",
-   "source_name": "8891",
-   "generation": "ND",
-   "first_seen": "2026-09-22T06:00:00+00:00",
-   "last_seen": "2026-09-27T21:23:24+00:00",
-   "missed": 0,
-   "price_history": [
-    {
-     "date": "2026-09-22T06:00:00+00:00",
-     "price": 109.0
-    }
-   ],
    "status": "active"
   },
   {
@@ -617,7 +642,7 @@
    "generation": "ND",
    "first_seen": "2026-09-22T06:00:00+00:00",
    "last_seen": "2026-09-22T06:00:00+00:00",
-   "missed": 23,
+   "missed": 24,
    "price_history": [
     {
      "date": "2026-09-22T06:00:00+00:00",
