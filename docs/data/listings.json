@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-14T11:58:15+00:00",
+ "updated_at": "2026-10-14T17:14:40+00:00",
  "sources": {
   "ptt": {
    "name": "PTT CarShop",
@@ -9,7 +9,7 @@
   "8891": {
    "name": "8891",
    "ok": true,
-   "count": 10
+   "count": 11
   },
   "abccar": {
    "name": "abc好車網",
@@ -18,6 +18,34 @@
   }
  },
  "items": [
+  {
+   "id": "8891-4832766",
+   "url": "https://auto.8891.com.tw/usedauto-infos-4832766.html",
+   "title": "Mazda MX-5 2016款 2.0 2.0L",
+   "price": 88.0,
+   "year": 2016,
+   "mileage_km": 70000,
+   "location": "台北市",
+   "description": "馳堂-萊因認證 Mazda MX-5 HKS機增260P 全車精裝 一次到位",
+   "images": [
+    "https://photo.8891.com.tw/2026/10/14/17919648799801914771.jpg"
+   ],
+   "seller": "馳堂車業",
+   "posted_at": null,
+   "source": "8891",
+   "source_name": "8891",
+   "generation": "ND",
+   "first_seen": "2026-10-14T17:14:40+00:00",
+   "last_seen": "2026-10-14T17:14:40+00:00",
+   "missed": 0,
+   "price_history": [
+    {
+     "date": "2026-10-14T17:14:40+00:00",
+     "price": 88.0
+    }
+   ],
+   "status": "active"
+  },
   {
    "id": "8891-4829754",
    "url": "https://auto.8891.com.tw/usedauto-infos-4829754.html",
@@ -34,7 +62,7 @@
    "source_name": "8891",
    "generation": "ND",
    "first_seen": "2026-10-13T00:44:30+00:00",
-   "last_seen": "2026-10-14T11:58:15+00:00",
+   "last_seen": "2026-10-14T17:14:40+00:00",
    "missed": 0,
    "price_history": [],
    "status": "active"
@@ -42,22 +70,20 @@
   {
    "id": "8891-4829405",
    "url": "https://auto.8891.com.tw/usedauto-infos-4829405.html",
-   "title": "99+ 人在看 Mazda MX-5 2025款 2.0L MT 2.0L MX-5 35週年紀念版",
+   "title": "13 人在看 Mazda MX-5 2025款 2.0L MT 2.0L MX-5 35週年紀念版",
    "price": 149.0,
    "year": 2025,
    "mileage_km": 2200,
    "location": "台南市",
-   "description": "MX-5 35週年紀念版",
-   "images": [
-    "https://photo.8891.com.tw/2026/10/11/17917133837688344788.jpg"
-   ],
-   "seller": "",
+   "description": "",
+   "images": [],
+   "seller": null,
    "posted_at": null,
    "source": "8891",
    "source_name": "8891",
    "generation": "ND",
    "first_seen": "2026-10-11T12:55:10+00:00",
-   "last_seen": "2026-10-14T11:58:15+00:00",
+   "last_seen": "2026-10-14T17:14:40+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -80,14 +106,16 @@
    "mileage_km": 7000,
    "location": "台中市",
    "description": "褐頂棚/Recaro跑座椅/Bilstein避震/僅跑7000公里/原鈑件",
-   "images": [],
-   "seller": null,
+   "images": [
+    "https://photo.8891.com.tw/2026/10/08/17914488157139548699.jpg"
+   ],
+   "seller": "美傑汽車",
    "posted_at": null,
    "source": "8891",
    "source_name": "8891",
    "generation": "ND",
    "first_seen": "2026-10-10T21:47:34+00:00",
-   "last_seen": "2026-10-14T11:58:15+00:00",
+   "last_seen": "2026-10-14T17:14:40+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -115,7 +143,7 @@
    "source_name": "abc好車網",
    "generation": "ND",
    "first_seen": "2026-10-08T23:23:24+00:00",
-   "last_seen": "2026-10-14T11:58:15+00:00",
+   "last_seen": "2026-10-14T17:14:40+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -143,7 +171,7 @@
    "source_name": "abc好車網",
    "generation": "ND",
    "first_seen": "2026-10-08T23:23:24+00:00",
-   "last_seen": "2026-10-14T11:58:15+00:00",
+   "last_seen": "2026-10-14T17:14:40+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -170,7 +198,7 @@
    "generation": "ND",
    "first_seen": "2026-10-06T18:25:01+00:00",
    "last_seen": "2026-10-09T13:23:18+00:00",
-   "missed": 14,
+   "missed": 15,
    "price_history": [],
    "status": "gone",
    "gone_at": "2026-10-10T05:56:38+00:00"
@@ -184,16 +212,14 @@
    "mileage_km": 38000,
    "location": "台北市",
    "description": "旗艦型 2.0L 【 內湖有為汽車 】MX-5 RF / 市場搶手車款 / 低里程 / 實車在店",
-   "images": [
-    "https://photo.8891.com.tw/2026/10/03/17910100300345826135.jpg"
-   ],
+   "images": [],
    "seller": null,
    "posted_at": null,
    "source": "8891",
    "source_name": "8891",
    "generation": "ND",
    "first_seen": "2026-10-03T16:20:36+00:00",
-   "last_seen": "2026-10-14T11:58:15+00:00",
+   "last_seen": "2026-10-14T17:14:40+00:00",
    "missed": 0,
    "price_history": [],
    "status": "active"
@@ -214,7 +240,7 @@
    "source_name": "8891",
    "generation": "ND",
    "first_seen": "2026-09-29T12:57:33+00:00",
-   "last_seen": "2026-10-14T11:58:15+00:00",
+   "last_seen": "2026-10-14T17:14:40+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -241,7 +267,7 @@
    "generation": "ND",
    "first_seen": "2026-09-28T05:28:23+00:00",
    "last_seen": "2026-10-07T23:07:44+00:00",
-   "missed": 19,
+   "missed": 20,
    "price_history": [],
    "status": "gone",
    "gone_at": "2026-10-08T13:34:59+00:00"
@@ -255,14 +281,16 @@
    "mileage_km": 5700,
    "location": "台北市",
    "description": "手排換檔、後驅操控，找回與車直接對話的感覺",
-   "images": [],
-   "seller": null,
+   "images": [
+    "https://photo.8891.com.tw/2026/09/27/17904929750423144659.jpg"
+   ],
+   "seller": "TPR汽車休息站",
    "posted_at": null,
    "source": "8891",
    "source_name": "8891",
    "generation": "ND",
    "first_seen": "2026-09-27T12:07:11+00:00",
-   "last_seen": "2026-10-14T11:58:15+00:00",
+   "last_seen": "2026-10-14T17:14:40+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -288,7 +316,7 @@
    "source_name": "8891",
    "generation": "ND",
    "first_seen": "2026-09-27T12:07:11+00:00",
-   "last_seen": "2026-10-14T11:58:15+00:00",
+   "last_seen": "2026-10-14T17:14:40+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -316,7 +344,7 @@
    "source_name": "abc好車網",
    "generation": "ND",
    "first_seen": "2026-09-23T10:45:45+00:00",
-   "last_seen": "2026-10-14T11:58:15+00:00",
+   "last_seen": "2026-10-14T17:14:40+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -344,7 +372,7 @@
    "source_name": "abc好車網",
    "generation": "ND",
    "first_seen": "2026-09-23T10:45:45+00:00",
-   "last_seen": "2026-10-14T11:58:15+00:00",
+   "last_seen": "2026-10-14T17:14:40+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -372,7 +400,7 @@
    "source_name": "abc好車網",
    "generation": "ND",
    "first_seen": "2026-09-23T10:45:45+00:00",
-   "last_seen": "2026-10-14T11:58:15+00:00",
+   "last_seen": "2026-10-14T17:14:40+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -400,7 +428,7 @@
    "source_name": "abc好車網",
    "generation": "ND",
    "first_seen": "2026-09-23T10:45:45+00:00",
-   "last_seen": "2026-10-14T11:58:15+00:00",
+   "last_seen": "2026-10-14T17:14:40+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -428,7 +456,7 @@
    "source_name": "abc好車網",
    "generation": "ND",
    "first_seen": "2026-09-23T10:45:45+00:00",
-   "last_seen": "2026-10-14T11:58:15+00:00",
+   "last_seen": "2026-10-14T17:14:40+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -456,7 +484,7 @@
    "source_name": "abc好車網",
    "generation": "ND",
    "first_seen": "2026-09-23T10:45:45+00:00",
-   "last_seen": "2026-10-14T11:58:15+00:00",
+   "last_seen": "2026-10-14T17:14:40+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -484,7 +512,7 @@
    "source_name": "abc好車網",
    "generation": "ND",
    "first_seen": "2026-09-23T10:45:45+00:00",
-   "last_seen": "2026-10-14T11:58:15+00:00",
+   "last_seen": "2026-10-14T17:14:40+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -512,7 +540,7 @@
    "source_name": "abc好車網",
    "generation": "ND",
    "first_seen": "2026-09-23T10:45:45+00:00",
-   "last_seen": "2026-10-14T11:58:15+00:00",
+   "last_seen": "2026-10-14T17:14:40+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -541,7 +569,7 @@
    "generation": "NC",
    "first_seen": "2026-09-23T10:45:45+00:00",
    "last_seen": "2026-10-12T15:32:01+00:00",
-   "missed": 5,
+   "missed": 6,
    "price_history": [
     {
      "date": "2026-09-23T10:45:45+00:00",
@@ -570,7 +598,7 @@
    "generation": "ND",
    "first_seen": "2026-09-23T10:45:45+00:00",
    "last_seen": "2026-10-09T13:23:18+00:00",
-   "missed": 14,
+   "missed": 15,
    "price_history": [
     {
      "date": "2026-09-23T10:45:45+00:00",
@@ -599,7 +627,7 @@
    "generation": "ND",
    "first_seen": "2026-09-23T10:45:45+00:00",
    "last_seen": "2026-10-09T06:13:17+00:00",
-   "missed": 15,
+   "missed": 16,
    "price_history": [
     {
      "date": "2026-09-23T10:45:45+00:00",
@@ -628,7 +656,7 @@
    "generation": "ND",
    "first_seen": "2026-09-23T10:45:45+00:00",
    "last_seen": "2026-09-26T05:03:01+00:00",
-   "missed": 56,
+   "missed": 57,
    "price_history": [
     {
      "date": "2026-09-23T10:45:45+00:00",
@@ -658,7 +686,7 @@
    "generation": "ND",
    "first_seen": "2026-09-23T09:48:42+00:00",
    "last_seen": "2026-10-04T05:58:12+00:00",
-   "missed": 29,
+   "missed": 30,
    "price_history": [],
    "status": "gone",
    "gone_at": "2026-10-04T21:30:40+00:00"
@@ -679,7 +707,7 @@
    "source_name": "8891",
    "generation": "ND",
    "first_seen": "2026-09-22T06:00:00+00:00",
-   "last_seen": "2026-10-14T11:58:15+00:00",
+   "last_seen": "2026-10-14T17:14:40+00:00",
    "missed": 0,
    "price_history": [],
    "status": "active"
@@ -702,7 +730,7 @@
    "source_name": "8891",
    "generation": "ND",
    "first_seen": "2026-09-22T06:00:00+00:00",
-   "last_seen": "2026-10-14T11:58:15+00:00",
+   "last_seen": "2026-10-14T17:14:40+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -721,16 +749,14 @@
    "mileage_km": 13000,
    "location": "桃園市",
    "description": "",
-   "images": [
-    "https://photo.8891.com.tw/2026/08/24/17875732535474885705.jpg"
-   ],
-   "seller": "宇盟國際",
+   "images": [],
+   "seller": null,
    "posted_at": null,
    "source": "8891",
    "source_name": "8891",
    "generation": "ND",
    "first_seen": "2026-09-22T06:00:00+00:00",
-   "last_seen": "2026-10-14T11:58:15+00:00",
+   "last_seen": "2026-10-14T17:14:40+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -757,7 +783,7 @@
    "generation": "ND",
    "first_seen": "2026-09-22T06:00:00+00:00",
    "last_seen": "2026-10-09T06:13:17+00:00",
-   "missed": 15,
+   "missed": 16,
    "price_history": [
     {
      "date": "2026-09-22T06:00:00+00:00",
@@ -784,7 +810,7 @@
    "generation": "ND",
    "first_seen": "2026-09-22T06:00:00+00:00",
    "last_seen": "2026-09-30T12:40:35+00:00",
-   "missed": 41,
+   "missed": 42,
    "price_history": [],
    "status": "gone",
    "gone_at": "2026-10-01T06:01:41+00:00"
@@ -808,7 +834,7 @@
    "generation": "ND",
    "first_seen": "2026-09-22T06:00:00+00:00",
    "last_seen": "2026-09-27T21:23:24+00:00",
-   "missed": 49,
+   "missed": 50,
    "price_history": [
     {
      "date": "2026-09-22T06:00:00+00:00",
@@ -835,7 +861,7 @@
    "generation": "ND",
    "first_seen": "2026-09-22T06:00:00+00:00",
    "last_seen": "2026-09-27T21:23:24+00:00",
-   "missed": 49,
+   "missed": 50,
    "price_history": [],
    "status": "gone",
    "gone_at": "2026-09-28T14:00:39+00:00"
@@ -857,7 +883,7 @@
    "generation": "ND",
    "first_seen": "2026-09-22T06:00:00+00:00",
    "last_seen": "2026-09-22T06:00:00+00:00",
-   "missed": 72,
+   "missed": 73,
    "price_history": [
     {
      "date": "2026-09-22T06:00:00+00:00",
