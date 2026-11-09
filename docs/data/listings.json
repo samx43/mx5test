@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-08T22:09:51+00:00",
+ "updated_at": "2026-11-09T06:39:45+00:00",
  "sources": {
   "ptt": {
    "name": "PTT CarShop",
@@ -9,7 +9,7 @@
   "8891": {
    "name": "8891",
    "ok": true,
-   "count": 19
+   "count": 18
   },
   "abccar": {
    "name": "abc好車網",
@@ -26,7 +26,7 @@
    "year": 2023,
    "mileage_km": 1000,
    "location": "台北市",
-   "description": "年產 2.0L MT RS 2.0L 【明龍汽車】總代理 Recaro跑車椅 盲點偵測 BOSE音響 車道偏移 電熱椅",
+   "description": "年產 2.0L MT RS 2.0L 【明龍汽車】總代理 Recaro跑車椅 倍適登避震器 盲點偵測 車道偏移 電熱椅",
    "images": [],
    "seller": null,
    "posted_at": null,
@@ -34,7 +34,7 @@
    "source_name": "8891",
    "generation": "ND",
    "first_seen": "2026-11-08T13:29:20+00:00",
-   "last_seen": "2026-11-08T22:09:51+00:00",
+   "last_seen": "2026-11-09T06:39:45+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -62,7 +62,7 @@
    "source_name": "8891",
    "generation": "ND",
    "first_seen": "2026-11-07T06:02:35+00:00",
-   "last_seen": "2026-11-08T22:09:51+00:00",
+   "last_seen": "2026-11-09T06:39:45+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -90,7 +90,7 @@
    "source_name": "8891",
    "generation": "ND",
    "first_seen": "2026-11-06T19:29:53+00:00",
-   "last_seen": "2026-11-08T22:09:51+00:00",
+   "last_seen": "2026-11-09T06:39:45+00:00",
    "missed": 0,
    "price_history": [],
    "status": "active"
@@ -111,7 +111,7 @@
    "source_name": "8891",
    "generation": "ND",
    "first_seen": "2026-11-06T06:52:34+00:00",
-   "last_seen": "2026-11-08T22:09:51+00:00",
+   "last_seen": "2026-11-09T06:39:45+00:00",
    "missed": 0,
    "price_history": [],
    "status": "active"
@@ -133,7 +133,7 @@
    "generation": "ND",
    "first_seen": "2026-11-05T19:59:26+00:00",
    "last_seen": "2026-11-07T06:02:35+00:00",
-   "missed": 5,
+   "missed": 6,
    "price_history": [
     {
      "date": "2026-11-05T19:59:26+00:00",
@@ -159,7 +159,7 @@
    "source_name": "8891",
    "generation": "ND",
    "first_seen": "2026-11-04T19:48:04+00:00",
-   "last_seen": "2026-11-08T22:09:51+00:00",
+   "last_seen": "2026-11-09T06:39:45+00:00",
    "missed": 0,
    "price_history": [],
    "status": "active"
@@ -180,7 +180,7 @@
    "source_name": "8891",
    "generation": "ND",
    "first_seen": "2026-11-03T14:21:09+00:00",
-   "last_seen": "2026-11-08T22:09:51+00:00",
+   "last_seen": "2026-11-09T06:39:45+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -209,7 +209,7 @@
    "generation": "ND",
    "first_seen": "2026-11-03T14:21:09+00:00",
    "last_seen": "2026-11-05T06:53:00+00:00",
-   "missed": 9,
+   "missed": 10,
    "price_history": [
     {
      "date": "2026-11-03T14:21:09+00:00",
@@ -228,14 +228,16 @@
    "mileage_km": 19000,
    "location": "台北市",
    "description": "年產 2.0L MT 2.0L 先進車業 MAZDA MX5 ND2 原廠手 原鈑件 原廠保養 里程保證",
-   "images": [],
+   "images": [
+    "https://photo.8891.com.tw/2026/10/31/17934556994844388800.jpg"
+   ],
    "seller": null,
    "posted_at": null,
    "source": "8891",
    "source_name": "8891",
    "generation": "ND",
    "first_seen": "2026-11-02T06:11:44+00:00",
-   "last_seen": "2026-11-08T22:09:51+00:00",
+   "last_seen": "2026-11-09T06:39:45+00:00",
    "missed": 0,
    "price_history": [],
    "status": "active"
@@ -256,7 +258,7 @@
    "source_name": "8891",
    "generation": "ND",
    "first_seen": "2026-11-01T13:29:20+00:00",
-   "last_seen": "2026-11-08T22:09:51+00:00",
+   "last_seen": "2026-11-09T06:39:45+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -284,7 +286,7 @@
    "source_name": "abc好車網",
    "generation": "ND",
    "first_seen": "2026-10-31T21:38:39+00:00",
-   "last_seen": "2026-11-08T22:09:51+00:00",
+   "last_seen": "2026-11-09T06:39:45+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -311,7 +313,7 @@
    "generation": "ND",
    "first_seen": "2026-10-30T13:00:10+00:00",
    "last_seen": "2026-11-01T22:05:45+00:00",
-   "missed": 17,
+   "missed": 18,
    "price_history": [
     {
      "date": "2026-10-30T13:00:10+00:00",
@@ -320,6 +322,32 @@
    ],
    "status": "gone",
    "gone_at": "2026-11-02T16:00:42+00:00"
+  },
+  {
+   "id": "8891-4846111",
+   "url": "https://auto.8891.com.tw/usedauto-infos-4846111.html",
+   "title": "Mazda MX-5 2025",
+   "price": 143.8,
+   "year": 2025,
+   "mileage_km": 4000,
+   "location": "桃園市",
+   "description": "年產 2.0L RF 2.0L RF ND3 準新車況 全車原鈑件 一手原場無改裝",
+   "images": [],
+   "seller": null,
+   "posted_at": null,
+   "source": "8891",
+   "source_name": "8891",
+   "generation": "ND",
+   "first_seen": "2026-10-29T22:47:33+00:00",
+   "last_seen": "2026-11-09T06:39:45+00:00",
+   "missed": 0,
+   "price_history": [
+    {
+     "date": "2026-10-29T22:47:33+00:00",
+     "price": 143.8
+    }
+   ],
+   "status": "active"
   },
   {
    "id": "8891-4846630",
@@ -338,33 +366,7 @@
    "generation": "ND",
    "first_seen": "2026-10-29T22:47:33+00:00",
    "last_seen": "2026-11-08T22:09:51+00:00",
-   "missed": 0,
-   "price_history": [
-    {
-     "date": "2026-10-29T22:47:33+00:00",
-     "price": 143.8
-    }
-   ],
-   "status": "active"
-  },
-  {
-   "id": "8891-4846111",
-   "url": "https://auto.8891.com.tw/usedauto-infos-4846111.html",
-   "title": "Mazda MX-5 2025",
-   "price": 143.8,
-   "year": 2025,
-   "mileage_km": 4000,
-   "location": "桃園市",
-   "description": "年產 2.0L RF 2.0L RF ND3 準新車況 全車原鈑件 一手原場無改裝",
-   "images": [],
-   "seller": null,
-   "posted_at": null,
-   "source": "8891",
-   "source_name": "8891",
-   "generation": "ND",
-   "first_seen": "2026-10-29T22:47:33+00:00",
-   "last_seen": "2026-11-08T22:09:51+00:00",
-   "missed": 0,
+   "missed": 1,
    "price_history": [
     {
      "date": "2026-10-29T22:47:33+00:00",
@@ -390,7 +392,7 @@
    "generation": "ND",
    "first_seen": "2026-10-29T13:07:00+00:00",
    "last_seen": "2026-11-07T21:54:07+00:00",
-   "missed": 3,
+   "missed": 4,
    "price_history": [
     {
      "date": "2026-10-29T13:07:00+00:00",
@@ -417,7 +419,7 @@
    "generation": "ND",
    "first_seen": "2026-10-29T05:52:24+00:00",
    "last_seen": "2026-11-08T06:06:40+00:00",
-   "missed": 2,
+   "missed": 3,
    "price_history": [
     {
      "date": "2026-10-29T05:52:24+00:00",
@@ -443,7 +445,7 @@
    "source_name": "8891",
    "generation": "ND",
    "first_seen": "2026-10-27T18:12:14+00:00",
-   "last_seen": "2026-11-08T22:09:51+00:00",
+   "last_seen": "2026-11-09T06:39:45+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -462,16 +464,14 @@
    "mileage_km": 84000,
    "location": "台北市",
    "description": "年產 ND1 2.0L 2016 Mazda MX-5｜自排｜售 66.8 萬",
-   "images": [
-    "https://photo.8891.com.tw/2026/10/25/17929401983177135962.jpg"
-   ],
-   "seller": "",
+   "images": [],
+   "seller": null,
    "posted_at": null,
    "source": "8891",
    "source_name": "8891",
    "generation": "ND",
    "first_seen": "2026-10-26T13:09:05+00:00",
-   "last_seen": "2026-11-08T22:09:51+00:00",
+   "last_seen": "2026-11-09T06:39:45+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -500,7 +500,7 @@
    "generation": "ND",
    "first_seen": "2026-10-23T04:55:47+00:00",
    "last_seen": "2026-11-04T06:30:01+00:00",
-   "missed": 11,
+   "missed": 12,
    "price_history": [
     {
      "date": "2026-10-23T04:55:47+00:00",
@@ -526,7 +526,7 @@
    "source_name": "8891",
    "generation": "ND",
    "first_seen": "2026-10-21T11:54:31+00:00",
-   "last_seen": "2026-11-08T22:09:51+00:00",
+   "last_seen": "2026-11-09T06:39:45+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -553,7 +553,7 @@
    "generation": "ND",
    "first_seen": "2026-10-19T22:23:38+00:00",
    "last_seen": "2026-10-24T11:06:13+00:00",
-   "missed": 45,
+   "missed": 46,
    "price_history": [],
    "status": "gone",
    "gone_at": "2026-10-24T20:53:07+00:00"
@@ -574,7 +574,7 @@
    "source_name": "8891",
    "generation": "ND",
    "first_seen": "2026-10-17T20:39:13+00:00",
-   "last_seen": "2026-11-08T22:09:51+00:00",
+   "last_seen": "2026-11-09T06:39:45+00:00",
    "missed": 0,
    "price_history": [],
    "status": "active"
@@ -596,7 +596,7 @@
    "generation": "ND",
    "first_seen": "2026-10-16T04:36:09+00:00",
    "last_seen": "2026-11-06T19:29:53+00:00",
-   "missed": 6,
+   "missed": 7,
    "price_history": [
     {
      "date": "2026-10-16T04:36:09+00:00",
@@ -615,16 +615,14 @@
    "mileage_km": 70000,
    "location": "台北市",
    "description": "年產 2.0 2.0L 馳堂-萊因認證 Mazda MX-5 HKS機增260P 全車精裝 一次到位",
-   "images": [
-    "https://photo.8891.com.tw/2026/10/19/17923829510345827364.jpg"
-   ],
-   "seller": "馳堂車業",
+   "images": [],
+   "seller": null,
    "posted_at": null,
    "source": "8891",
    "source_name": "8891",
    "generation": "ND",
    "first_seen": "2026-10-14T17:14:40+00:00",
-   "last_seen": "2026-11-08T22:09:51+00:00",
+   "last_seen": "2026-11-09T06:39:45+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -651,7 +649,7 @@
    "generation": "ND",
    "first_seen": "2026-10-13T00:44:30+00:00",
    "last_seen": "2026-10-27T05:10:32+00:00",
-   "missed": 35,
+   "missed": 36,
    "price_history": [],
    "status": "gone",
    "gone_at": "2026-10-27T18:12:14+00:00"
@@ -664,17 +662,15 @@
    "year": 2025,
    "mileage_km": 2200,
    "location": "台南市",
-   "description": "MX-5 35週年紀念版",
-   "images": [
-    "https://photo.8891.com.tw/2026/10/11/17917133837688344788.jpg"
-   ],
-   "seller": "",
+   "description": "",
+   "images": [],
+   "seller": null,
    "posted_at": null,
    "source": "8891",
    "source_name": "8891",
    "generation": "ND",
    "first_seen": "2026-10-11T12:55:10+00:00",
-   "last_seen": "2026-11-08T22:09:51+00:00",
+   "last_seen": "2026-11-09T06:39:45+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -713,7 +709,7 @@
    "generation": "ND",
    "first_seen": "2026-10-10T21:47:34+00:00",
    "last_seen": "2026-10-18T04:38:59+00:00",
-   "missed": 69,
+   "missed": 70,
    "price_history": [
     {
      "date": "2026-10-10T21:47:34+00:00",
@@ -741,7 +737,7 @@
    "source_name": "abc好車網",
    "generation": "ND",
    "first_seen": "2026-10-08T23:23:24+00:00",
-   "last_seen": "2026-11-08T22:09:51+00:00",
+   "last_seen": "2026-11-09T06:39:45+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -770,7 +766,7 @@
    "generation": "ND",
    "first_seen": "2026-10-08T23:23:24+00:00",
    "last_seen": "2026-10-20T17:12:21+00:00",
-   "missed": 59,
+   "missed": 60,
    "price_history": [
     {
      "date": "2026-10-08T23:23:24+00:00",
@@ -779,28 +775,6 @@
    ],
    "status": "gone",
    "gone_at": "2026-10-21T04:53:38+00:00"
-  },
-  {
-   "id": "8891-4824391",
-   "url": "https://auto.8891.com.tw/usedauto-infos-4824391.html",
-   "title": "Mazda MX-5 2024款 2.0L MT RS",
-   "price": null,
-   "year": 2023,
-   "mileage_km": 5000,
-   "location": "台南市",
-   "description": "【欣榮汽車】2023年 MAZDA MX-5 RS 6MT",
-   "images": [],
-   "seller": null,
-   "posted_at": null,
-   "source": "8891",
-   "source_name": "8891",
-   "generation": "ND",
-   "first_seen": "2026-10-06T18:25:01+00:00",
-   "last_seen": "2026-10-09T13:23:18+00:00",
-   "missed": 98,
-   "price_history": [],
-   "status": "gone",
-   "gone_at": "2026-10-10T05:56:38+00:00"
   },
   {
    "id": "8891-4820994",
@@ -819,7 +793,7 @@
    "generation": "ND",
    "first_seen": "2026-10-03T16:20:36+00:00",
    "last_seen": "2026-10-27T05:10:32+00:00",
-   "missed": 35,
+   "missed": 36,
    "price_history": [],
    "status": "gone",
    "gone_at": "2026-10-27T18:12:14+00:00"
@@ -833,16 +807,14 @@
    "mileage_km": 20000,
    "location": "桃園市",
    "description": "年產 2.0L MT 2.0L 實車實價歡迎詳談,任何問題請直接加入冠豪官方 LINE : @nicecar！",
-   "images": [
-    "https://photo.8891.com.tw/2026/09/29/17906709145984872391.jpg"
-   ],
-   "seller": "冠豪汽車",
+   "images": [],
+   "seller": null,
    "posted_at": null,
    "source": "8891",
    "source_name": "8891",
    "generation": "ND",
    "first_seen": "2026-09-29T12:57:33+00:00",
-   "last_seen": "2026-11-08T22:09:51+00:00",
+   "last_seen": "2026-11-09T06:39:45+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -865,16 +837,14 @@
    "mileage_km": 25000,
    "location": "桃園市",
    "description": "年產 2.0L MT 2.0L 破盤出清實車實價,來電0922112341可加LINE視訊確認,歡迎賞車!!",
-   "images": [
-    "https://photo.8891.com.tw/2026/09/27/17904749821127011251.jpg"
-   ],
-   "seller": "冠豪汽車-煥達",
+   "images": [],
+   "seller": null,
    "posted_at": null,
    "source": "8891",
    "source_name": "8891",
    "generation": "ND",
    "first_seen": "2026-09-27T12:07:11+00:00",
-   "last_seen": "2026-11-08T22:09:51+00:00",
+   "last_seen": "2026-11-09T06:39:45+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -905,7 +875,7 @@
    "generation": "ND",
    "first_seen": "2026-09-27T12:07:11+00:00",
    "last_seen": "2026-10-22T04:53:15+00:00",
-   "missed": 54,
+   "missed": 55,
    "price_history": [
     {
      "date": "2026-09-27T12:07:11+00:00",
@@ -914,6 +884,34 @@
    ],
    "status": "gone",
    "gone_at": "2026-10-22T17:14:09+00:00"
+  },
+  {
+   "id": "abccar-2268901",
+   "url": "https://www.abccar.com.tw/Car/2268901",
+   "title": "MAZDA MX-5 2.0 RF Skyactiv-G 2023年",
+   "price": 84.8,
+   "year": 2023,
+   "mileage_km": null,
+   "location": null,
+   "description": "FB搜尋【小翌嚴選車庫】 全額貸專案 0元交車方案 ，<p><img style=\"display: block; margin-left: auto; margin-right: auto;\" src=\"https://image.abccar.com.tw/carimages/images/f4b2d97af0a…",
+   "images": [
+    "https://image.abccar.com.tw/carimages/images/5092cc2d9e3cf0eeca36c01e9615a61f.jpg"
+   ],
+   "seller": "小翌嚴選車庫",
+   "posted_at": null,
+   "source": "abccar",
+   "source_name": "abc好車網",
+   "generation": "ND",
+   "first_seen": "2026-09-23T10:45:45+00:00",
+   "last_seen": "2026-11-09T06:39:45+00:00",
+   "missed": 0,
+   "price_history": [
+    {
+     "date": "2026-09-23T10:45:45+00:00",
+     "price": 84.8
+    }
+   ],
+   "status": "active"
   },
   {
    "id": "abccar-2340084",
@@ -933,7 +931,7 @@
    "source_name": "abc好車網",
    "generation": "ND",
    "first_seen": "2026-09-23T10:45:45+00:00",
-   "last_seen": "2026-11-08T22:09:51+00:00",
+   "last_seen": "2026-11-09T06:39:45+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -961,7 +959,7 @@
    "source_name": "abc好車網",
    "generation": "ND",
    "first_seen": "2026-09-23T10:45:45+00:00",
-   "last_seen": "2026-11-08T22:09:51+00:00",
+   "last_seen": "2026-11-09T06:39:45+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -989,7 +987,7 @@
    "source_name": "abc好車網",
    "generation": "ND",
    "first_seen": "2026-09-23T10:45:45+00:00",
-   "last_seen": "2026-11-08T22:09:51+00:00",
+   "last_seen": "2026-11-09T06:39:45+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -1017,7 +1015,7 @@
    "source_name": "abc好車網",
    "generation": "ND",
    "first_seen": "2026-09-23T10:45:45+00:00",
-   "last_seen": "2026-11-08T22:09:51+00:00",
+   "last_seen": "2026-11-09T06:39:45+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -1045,40 +1043,12 @@
    "source_name": "abc好車網",
    "generation": "ND",
    "first_seen": "2026-09-23T10:45:45+00:00",
-   "last_seen": "2026-11-08T22:09:51+00:00",
+   "last_seen": "2026-11-09T06:39:45+00:00",
    "missed": 0,
    "price_history": [
     {
      "date": "2026-09-23T10:45:45+00:00",
      "price": 99.8
-    }
-   ],
-   "status": "active"
-  },
-  {
-   "id": "abccar-2268901",
-   "url": "https://www.abccar.com.tw/Car/2268901",
-   "title": "MAZDA MX-5 2.0 RF Skyactiv-G 2023年",
-   "price": 84.8,
-   "year": 2023,
-   "mileage_km": null,
-   "location": null,
-   "description": "FB搜尋【小翌嚴選車庫】 全額貸專案 0元交車方案 ，<p><img style=\"display: block; margin-left: auto; margin-right: auto;\" src=\"https://image.abccar.com.tw/carimages/images/f4b2d97af0a…",
-   "images": [
-    "https://image.abccar.com.tw/carimages/images/5092cc2d9e3cf0eeca36c01e9615a61f.jpg"
-   ],
-   "seller": "小翌嚴選車庫",
-   "posted_at": null,
-   "source": "abccar",
-   "source_name": "abc好車網",
-   "generation": "ND",
-   "first_seen": "2026-09-23T10:45:45+00:00",
-   "last_seen": "2026-11-08T22:09:51+00:00",
-   "missed": 0,
-   "price_history": [
-    {
-     "date": "2026-09-23T10:45:45+00:00",
-     "price": 84.8
     }
    ],
    "status": "active"
@@ -1102,7 +1072,7 @@
    "generation": "ND",
    "first_seen": "2026-09-23T10:45:45+00:00",
    "last_seen": "2026-10-26T13:09:05+00:00",
-   "missed": 37,
+   "missed": 38,
    "price_history": [
     {
      "date": "2026-09-23T10:45:45+00:00",
@@ -1131,7 +1101,7 @@
    "generation": "ND",
    "first_seen": "2026-09-23T10:45:45+00:00",
    "last_seen": "2026-10-22T17:14:09+00:00",
-   "missed": 51,
+   "missed": 52,
    "price_history": [
     {
      "date": "2026-09-23T10:45:45+00:00",
@@ -1160,7 +1130,7 @@
    "generation": "NC",
    "first_seen": "2026-09-23T10:45:45+00:00",
    "last_seen": "2026-10-12T15:32:01+00:00",
-   "missed": 88,
+   "missed": 89,
    "price_history": [
     {
      "date": "2026-09-23T10:45:45+00:00",
@@ -1169,64 +1139,6 @@
    ],
    "status": "gone",
    "gone_at": "2026-10-13T14:16:06+00:00"
-  },
-  {
-   "id": "abccar-2327732",
-   "url": "https://www.abccar.com.tw/Car/2327732",
-   "title": "Mazda MX-5 2021年",
-   "price": 109.8,
-   "year": 2021,
-   "mileage_km": null,
-   "location": null,
-   "description": "2021 Mazda MX-5 MT 手排，2021 Mazda Mx-5 MT2.0自然進氣 • 6速手排 • 最大馬力184匹配備：ABS防鎖死煞車輔助系統DSC動態穩定車道偏離警示TCS循跡胎壓偵測斜坡輔助定速系統盲點偵測後四眼式倒車雷達倒車顯影Keyless換檔撥片7吋螢幕藍芽Bose環繞音響LED頭燈LED…",
-   "images": [
-    "https://image.abccar.com.tw/hot/cwhd11615338022.jpg"
-   ],
-   "seller": "帝承車業",
-   "posted_at": null,
-   "source": "abccar",
-   "source_name": "abc好車網",
-   "generation": "ND",
-   "first_seen": "2026-09-23T10:45:45+00:00",
-   "last_seen": "2026-10-09T13:23:18+00:00",
-   "missed": 97,
-   "price_history": [
-    {
-     "date": "2026-09-23T10:45:45+00:00",
-     "price": 109.8
-    }
-   ],
-   "status": "gone",
-   "gone_at": "2026-10-10T05:56:38+00:00"
-  },
-  {
-   "id": "abccar-2232621",
-   "url": "https://www.abccar.com.tw/Car/2232621",
-   "title": "Mazda MX-5 2.0 SKY-G 手排款 (ND) 2022年",
-   "price": 108.8,
-   "year": 2022,
-   "mileage_km": null,
-   "location": null,
-   "description": "MX-5手排 敞篷魅力 後驅操控 極致駕馭快感 原漆原版件 認證車 約看車折2萬，2022 Mazda MX-5 手排純粹駕馭，無拘無束！沒有多餘負擔，手動敞篷設計，一手開啟自由，感受陽光與微風的完美結合。輕量化車身，搭配 6速手排變速箱，每一次換檔都是駕駛樂趣的極致體驗！Skyactiv-G 2.0 自然進氣引擎，…",
-   "images": [
-    "https://image.abccar.com.tw/carimages/images/8ef1f5cd168b9dae7fbee999e58e303e.jpg"
-   ],
-   "seller": "安駿汽車-志銘老闆直售",
-   "posted_at": null,
-   "source": "abccar",
-   "source_name": "abc好車網",
-   "generation": "ND",
-   "first_seen": "2026-09-23T10:45:45+00:00",
-   "last_seen": "2026-10-09T06:13:17+00:00",
-   "missed": 98,
-   "price_history": [
-    {
-     "date": "2026-09-23T10:45:45+00:00",
-     "price": 108.8
-    }
-   ],
-   "status": "gone",
-   "gone_at": "2026-10-09T22:41:22+00:00"
   },
   {
    "id": "8891-4803348",
@@ -1244,7 +1156,7 @@
    "source_name": "8891",
    "generation": "ND",
    "first_seen": "2026-09-22T06:00:00+00:00",
-   "last_seen": "2026-11-08T22:09:51+00:00",
+   "last_seen": "2026-11-09T06:39:45+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -1271,7 +1183,7 @@
    "generation": "ND",
    "first_seen": "2026-09-22T06:00:00+00:00",
    "last_seen": "2026-10-23T11:43:41+00:00",
-   "missed": 49,
+   "missed": 50,
    "price_history": [
     {
      "date": "2026-09-22T06:00:00+00:00",
@@ -1298,37 +1210,10 @@
    "generation": "ND",
    "first_seen": "2026-09-22T06:00:00+00:00",
    "last_seen": "2026-10-18T11:11:32+00:00",
-   "missed": 68,
+   "missed": 69,
    "price_history": [],
    "status": "gone",
    "gone_at": "2026-10-18T20:47:43+00:00"
-  },
-  {
-   "id": "8891-4798212",
-   "url": "https://auto.8891.com.tw/usedauto-infos-4798212.html",
-   "title": "Mazda MX-5 2020款 2.0L",
-   "price": 113.8,
-   "year": 2020,
-   "mileage_km": 14000,
-   "location": "桃園市",
-   "description": "來電0933107198可加LINE視訊確認,歡迎賞車議價!!",
-   "images": [],
-   "seller": null,
-   "posted_at": null,
-   "source": "8891",
-   "source_name": "8891",
-   "generation": "ND",
-   "first_seen": "2026-09-22T06:00:00+00:00",
-   "last_seen": "2026-10-09T06:13:17+00:00",
-   "missed": 99,
-   "price_history": [
-    {
-     "date": "2026-09-22T06:00:00+00:00",
-     "price": 113.8
-    }
-   ],
-   "status": "gone",
-   "gone_at": "2026-10-09T22:41:22+00:00"
   }
  ]
 }
