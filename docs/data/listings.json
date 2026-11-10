@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-09T22:24:46+00:00",
+ "updated_at": "2026-11-10T07:23:25+00:00",
  "sources": {
   "ptt": {
    "name": "PTT CarShop",
@@ -9,7 +9,7 @@
   "8891": {
    "name": "8891",
    "ok": true,
-   "count": 17
+   "count": 16
   },
   "abccar": {
    "name": "abc好車網",
@@ -34,7 +34,7 @@
    "source_name": "8891",
    "generation": "ND",
    "first_seen": "2026-11-08T13:29:20+00:00",
-   "last_seen": "2026-11-09T22:24:46+00:00",
+   "last_seen": "2026-11-10T07:23:25+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -53,16 +53,14 @@
    "mileage_km": 80000,
    "location": "桃園市",
    "description": "年產 2.0 2.0L 『實車實價 實跑8萬公里 里程保證 不實賠10萬』改帥不改快 【在地經營20年】",
-   "images": [
-    "https://photo.8891.com.tw/2026/11/04/17937710314949392915.jpg"
-   ],
-   "seller": "好車多汽車",
+   "images": [],
+   "seller": null,
    "posted_at": null,
    "source": "8891",
    "source_name": "8891",
    "generation": "ND",
    "first_seen": "2026-11-07T06:02:35+00:00",
-   "last_seen": "2026-11-09T22:24:46+00:00",
+   "last_seen": "2026-11-10T07:23:25+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -81,14 +79,16 @@
    "mileage_km": 20000,
    "location": "台南市",
    "description": "年產 2.0L RF 2.0L 【欣榮汽車】2022年 MAZDA MX-5 ND2 RF 硬頂自排",
-   "images": [],
+   "images": [
+    "https://photo.8891.com.tw/2026/11/06/17939357479185065117.jpg"
+   ],
    "seller": null,
    "posted_at": null,
    "source": "8891",
    "source_name": "8891",
    "generation": "ND",
    "first_seen": "2026-11-06T19:29:53+00:00",
-   "last_seen": "2026-11-09T22:24:46+00:00",
+   "last_seen": "2026-11-10T07:23:25+00:00",
    "missed": 0,
    "price_history": [],
    "status": "active"
@@ -102,14 +102,16 @@
    "mileage_km": 50000,
    "location": "台南市",
    "description": "年產 2.0L 2.0L 【欣榮汽車】2017年 MAZDA MX-5 ND1 軟頂自排",
-   "images": [],
-   "seller": null,
+   "images": [
+    "https://photo.8891.com.tw/2026/11/09/17942304542893492047.jpg"
+   ],
+   "seller": "欣榮汽車 X.G",
    "posted_at": null,
    "source": "8891",
    "source_name": "8891",
    "generation": "ND",
    "first_seen": "2026-11-06T06:52:34+00:00",
-   "last_seen": "2026-11-09T22:24:46+00:00",
+   "last_seen": "2026-11-10T07:23:25+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -136,7 +138,7 @@
    "generation": "ND",
    "first_seen": "2026-11-05T19:59:26+00:00",
    "last_seen": "2026-11-07T06:02:35+00:00",
-   "missed": 7,
+   "missed": 8,
    "price_history": [
     {
      "date": "2026-11-05T19:59:26+00:00",
@@ -155,16 +157,14 @@
    "mileage_km": 50000,
    "location": "台南市",
    "description": "年產 2.0L RF 旗艦型 2.0L 【欣榮汽車】2017年 MAZDA MX-5 RF 硬頂自排",
-   "images": [
-    "https://photo.8891.com.tw/2026/11/03/17936918098344873426.jpg"
-   ],
+   "images": [],
    "seller": null,
    "posted_at": null,
    "source": "8891",
    "source_name": "8891",
    "generation": "ND",
    "first_seen": "2026-11-04T19:48:04+00:00",
-   "last_seen": "2026-11-09T22:24:46+00:00",
+   "last_seen": "2026-11-10T07:23:25+00:00",
    "missed": 0,
    "price_history": [],
    "status": "active"
@@ -178,14 +178,16 @@
    "mileage_km": 15000,
    "location": "新北市",
    "description": "年產 2.0L MT RS 2.0L",
-   "images": [],
-   "seller": null,
+   "images": [
+    "https://photo.8891.com.tw/2026/11/02/17936113153786305615.jpg"
+   ],
+   "seller": "繽樂汽車",
    "posted_at": null,
    "source": "8891",
    "source_name": "8891",
    "generation": "ND",
    "first_seen": "2026-11-03T14:21:09+00:00",
-   "last_seen": "2026-11-09T22:24:46+00:00",
+   "last_seen": "2026-11-10T07:23:25+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -214,7 +216,7 @@
    "generation": "ND",
    "first_seen": "2026-11-03T14:21:09+00:00",
    "last_seen": "2026-11-05T06:53:00+00:00",
-   "missed": 11,
+   "missed": 12,
    "price_history": [
     {
      "date": "2026-11-03T14:21:09+00:00",
@@ -240,7 +242,7 @@
    "source_name": "8891",
    "generation": "ND",
    "first_seen": "2026-11-02T06:11:44+00:00",
-   "last_seen": "2026-11-09T22:24:46+00:00",
+   "last_seen": "2026-11-10T07:23:25+00:00",
    "missed": 0,
    "price_history": [],
    "status": "active"
@@ -261,7 +263,7 @@
    "source_name": "8891",
    "generation": "ND",
    "first_seen": "2026-11-01T13:29:20+00:00",
-   "last_seen": "2026-11-09T22:24:46+00:00",
+   "last_seen": "2026-11-10T07:23:25+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -289,7 +291,7 @@
    "source_name": "abc好車網",
    "generation": "ND",
    "first_seen": "2026-10-31T21:38:39+00:00",
-   "last_seen": "2026-11-09T22:24:46+00:00",
+   "last_seen": "2026-11-10T07:23:25+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -316,7 +318,7 @@
    "generation": "ND",
    "first_seen": "2026-10-30T13:00:10+00:00",
    "last_seen": "2026-11-01T22:05:45+00:00",
-   "missed": 19,
+   "missed": 20,
    "price_history": [
     {
      "date": "2026-10-30T13:00:10+00:00",
@@ -342,7 +344,7 @@
    "source_name": "8891",
    "generation": "ND",
    "first_seen": "2026-10-29T22:47:33+00:00",
-   "last_seen": "2026-11-09T22:24:46+00:00",
+   "last_seen": "2026-11-10T07:23:25+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -369,7 +371,7 @@
    "generation": "ND",
    "first_seen": "2026-10-29T22:47:33+00:00",
    "last_seen": "2026-11-08T22:09:51+00:00",
-   "missed": 2,
+   "missed": 3,
    "price_history": [
     {
      "date": "2026-10-29T22:47:33+00:00",
@@ -396,7 +398,7 @@
    "generation": "ND",
    "first_seen": "2026-10-29T13:07:00+00:00",
    "last_seen": "2026-11-07T21:54:07+00:00",
-   "missed": 5,
+   "missed": 6,
    "price_history": [
     {
      "date": "2026-10-29T13:07:00+00:00",
@@ -423,7 +425,7 @@
    "generation": "ND",
    "first_seen": "2026-10-29T05:52:24+00:00",
    "last_seen": "2026-11-08T06:06:40+00:00",
-   "missed": 4,
+   "missed": 5,
    "price_history": [
     {
      "date": "2026-10-29T05:52:24+00:00",
@@ -450,14 +452,15 @@
    "generation": "ND",
    "first_seen": "2026-10-27T18:12:14+00:00",
    "last_seen": "2026-11-09T06:39:45+00:00",
-   "missed": 1,
+   "missed": 2,
    "price_history": [
     {
      "date": "2026-10-27T18:12:14+00:00",
      "price": 143.8
     }
    ],
-   "status": "active"
+   "status": "gone",
+   "gone_at": "2026-11-10T07:23:25+00:00"
   },
   {
    "id": "8891-4842853",
@@ -475,7 +478,7 @@
    "source_name": "8891",
    "generation": "ND",
    "first_seen": "2026-10-26T13:09:05+00:00",
-   "last_seen": "2026-11-09T22:24:46+00:00",
+   "last_seen": "2026-11-10T07:23:25+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -508,7 +511,7 @@
    "generation": "ND",
    "first_seen": "2026-10-23T04:55:47+00:00",
    "last_seen": "2026-11-04T06:30:01+00:00",
-   "missed": 13,
+   "missed": 14,
    "price_history": [
     {
      "date": "2026-10-23T04:55:47+00:00",
@@ -537,7 +540,7 @@
    "generation": "ND",
    "first_seen": "2026-10-21T11:54:31+00:00",
    "last_seen": "2026-11-09T22:24:46+00:00",
-   "missed": 0,
+   "missed": 1,
    "price_history": [
     {
      "date": "2026-10-21T11:54:31+00:00",
@@ -563,7 +566,7 @@
    "generation": "ND",
    "first_seen": "2026-10-19T22:23:38+00:00",
    "last_seen": "2026-10-24T11:06:13+00:00",
-   "missed": 47,
+   "missed": 48,
    "price_history": [],
    "status": "gone",
    "gone_at": "2026-10-24T20:53:07+00:00"
@@ -584,7 +587,7 @@
    "source_name": "8891",
    "generation": "ND",
    "first_seen": "2026-10-17T20:39:13+00:00",
-   "last_seen": "2026-11-09T22:24:46+00:00",
+   "last_seen": "2026-11-10T07:23:25+00:00",
    "missed": 0,
    "price_history": [],
    "status": "active"
@@ -606,7 +609,7 @@
    "generation": "ND",
    "first_seen": "2026-10-16T04:36:09+00:00",
    "last_seen": "2026-11-06T19:29:53+00:00",
-   "missed": 8,
+   "missed": 9,
    "price_history": [
     {
      "date": "2026-10-16T04:36:09+00:00",
@@ -632,7 +635,7 @@
    "source_name": "8891",
    "generation": "ND",
    "first_seen": "2026-10-14T17:14:40+00:00",
-   "last_seen": "2026-11-09T22:24:46+00:00",
+   "last_seen": "2026-11-10T07:23:25+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -659,7 +662,7 @@
    "generation": "ND",
    "first_seen": "2026-10-13T00:44:30+00:00",
    "last_seen": "2026-10-27T05:10:32+00:00",
-   "missed": 37,
+   "missed": 38,
    "price_history": [],
    "status": "gone",
    "gone_at": "2026-10-27T18:12:14+00:00"
@@ -682,7 +685,7 @@
    "source_name": "8891",
    "generation": "ND",
    "first_seen": "2026-10-11T12:55:10+00:00",
-   "last_seen": "2026-11-09T22:24:46+00:00",
+   "last_seen": "2026-11-10T07:23:25+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -721,7 +724,7 @@
    "generation": "ND",
    "first_seen": "2026-10-10T21:47:34+00:00",
    "last_seen": "2026-10-18T04:38:59+00:00",
-   "missed": 71,
+   "missed": 72,
    "price_history": [
     {
      "date": "2026-10-10T21:47:34+00:00",
@@ -749,7 +752,7 @@
    "source_name": "abc好車網",
    "generation": "ND",
    "first_seen": "2026-10-08T23:23:24+00:00",
-   "last_seen": "2026-11-09T22:24:46+00:00",
+   "last_seen": "2026-11-10T07:23:25+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -778,7 +781,7 @@
    "generation": "ND",
    "first_seen": "2026-10-08T23:23:24+00:00",
    "last_seen": "2026-10-20T17:12:21+00:00",
-   "missed": 61,
+   "missed": 62,
    "price_history": [
     {
      "date": "2026-10-08T23:23:24+00:00",
@@ -805,7 +808,7 @@
    "generation": "ND",
    "first_seen": "2026-10-03T16:20:36+00:00",
    "last_seen": "2026-10-27T05:10:32+00:00",
-   "missed": 37,
+   "missed": 38,
    "price_history": [],
    "status": "gone",
    "gone_at": "2026-10-27T18:12:14+00:00"
@@ -826,7 +829,7 @@
    "source_name": "8891",
    "generation": "ND",
    "first_seen": "2026-09-29T12:57:33+00:00",
-   "last_seen": "2026-11-09T22:24:46+00:00",
+   "last_seen": "2026-11-10T07:23:25+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -856,7 +859,7 @@
    "source_name": "8891",
    "generation": "ND",
    "first_seen": "2026-09-27T12:07:11+00:00",
-   "last_seen": "2026-11-09T22:24:46+00:00",
+   "last_seen": "2026-11-10T07:23:25+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -887,7 +890,7 @@
    "generation": "ND",
    "first_seen": "2026-09-27T12:07:11+00:00",
    "last_seen": "2026-10-22T04:53:15+00:00",
-   "missed": 56,
+   "missed": 57,
    "price_history": [
     {
      "date": "2026-09-27T12:07:11+00:00",
@@ -915,7 +918,7 @@
    "source_name": "abc好車網",
    "generation": "ND",
    "first_seen": "2026-09-23T10:45:45+00:00",
-   "last_seen": "2026-11-09T22:24:46+00:00",
+   "last_seen": "2026-11-10T07:23:25+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -943,7 +946,7 @@
    "source_name": "abc好車網",
    "generation": "ND",
    "first_seen": "2026-09-23T10:45:45+00:00",
-   "last_seen": "2026-11-09T22:24:46+00:00",
+   "last_seen": "2026-11-10T07:23:25+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -971,7 +974,7 @@
    "source_name": "abc好車網",
    "generation": "ND",
    "first_seen": "2026-09-23T10:45:45+00:00",
-   "last_seen": "2026-11-09T22:24:46+00:00",
+   "last_seen": "2026-11-10T07:23:25+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -999,7 +1002,7 @@
    "source_name": "abc好車網",
    "generation": "ND",
    "first_seen": "2026-09-23T10:45:45+00:00",
-   "last_seen": "2026-11-09T22:24:46+00:00",
+   "last_seen": "2026-11-10T07:23:25+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -1027,7 +1030,7 @@
    "source_name": "abc好車網",
    "generation": "ND",
    "first_seen": "2026-09-23T10:45:45+00:00",
-   "last_seen": "2026-11-09T22:24:46+00:00",
+   "last_seen": "2026-11-10T07:23:25+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -1055,7 +1058,7 @@
    "source_name": "abc好車網",
    "generation": "ND",
    "first_seen": "2026-09-23T10:45:45+00:00",
-   "last_seen": "2026-11-09T22:24:46+00:00",
+   "last_seen": "2026-11-10T07:23:25+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -1084,7 +1087,7 @@
    "generation": "ND",
    "first_seen": "2026-09-23T10:45:45+00:00",
    "last_seen": "2026-10-26T13:09:05+00:00",
-   "missed": 39,
+   "missed": 40,
    "price_history": [
     {
      "date": "2026-09-23T10:45:45+00:00",
@@ -1113,7 +1116,7 @@
    "generation": "ND",
    "first_seen": "2026-09-23T10:45:45+00:00",
    "last_seen": "2026-10-22T17:14:09+00:00",
-   "missed": 53,
+   "missed": 54,
    "price_history": [
     {
      "date": "2026-09-23T10:45:45+00:00",
@@ -1142,7 +1145,7 @@
    "generation": "NC",
    "first_seen": "2026-09-23T10:45:45+00:00",
    "last_seen": "2026-10-12T15:32:01+00:00",
-   "missed": 90,
+   "missed": 91,
    "price_history": [
     {
      "date": "2026-09-23T10:45:45+00:00",
@@ -1168,7 +1171,7 @@
    "source_name": "8891",
    "generation": "ND",
    "first_seen": "2026-09-22T06:00:00+00:00",
-   "last_seen": "2026-11-09T22:24:46+00:00",
+   "last_seen": "2026-11-10T07:23:25+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -1195,7 +1198,7 @@
    "generation": "ND",
    "first_seen": "2026-09-22T06:00:00+00:00",
    "last_seen": "2026-10-23T11:43:41+00:00",
-   "missed": 51,
+   "missed": 52,
    "price_history": [
     {
      "date": "2026-09-22T06:00:00+00:00",
@@ -1222,7 +1225,7 @@
    "generation": "ND",
    "first_seen": "2026-09-22T06:00:00+00:00",
    "last_seen": "2026-10-18T11:11:32+00:00",
-   "missed": 70,
+   "missed": 71,
    "price_history": [],
    "status": "gone",
    "gone_at": "2026-10-18T20:47:43+00:00"
