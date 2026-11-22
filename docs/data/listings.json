@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-22T06:54:39+00:00",
+ "updated_at": "2026-11-22T19:44:30+00:00",
  "sources": {
   "ptt": {
    "name": "PTT CarShop",
@@ -27,16 +27,14 @@
    "mileage_km": 16000,
    "location": "台北市",
    "description": "年產 2.0L MT RS 2.0L",
-   "images": [
-    "https://photo.8891.com.tw/2026/11/20/17951869198096008013.jpg"
-   ],
-   "seller": "B3garage",
+   "images": [],
+   "seller": null,
    "posted_at": null,
    "source": "8891",
    "source_name": "8891",
    "generation": "ND",
    "first_seen": "2026-11-20T20:25:34+00:00",
-   "last_seen": "2026-11-22T06:54:39+00:00",
+   "last_seen": "2026-11-22T19:44:30+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -62,7 +60,7 @@
    "source_name": "8891",
    "generation": "ND",
    "first_seen": "2026-11-19T07:31:28+00:00",
-   "last_seen": "2026-11-22T06:54:39+00:00",
+   "last_seen": "2026-11-22T19:44:30+00:00",
    "missed": 0,
    "price_history": [],
    "status": "active"
@@ -76,14 +74,16 @@
    "mileage_km": 8000,
    "location": "台南市",
    "description": "年產 ND3 RF 選配RECARO 2.0L 【欣榮汽車】2025年式 MAZDA MX-5 ND3 RF 硬頂自排",
-   "images": [],
+   "images": [
+    "https://photo.8891.com.tw/2026/11/18/17949901397629615088.jpg"
+   ],
    "seller": null,
    "posted_at": null,
    "source": "8891",
    "source_name": "8891",
    "generation": "ND",
    "first_seen": "2026-11-18T20:35:47+00:00",
-   "last_seen": "2026-11-22T06:54:39+00:00",
+   "last_seen": "2026-11-22T19:44:30+00:00",
    "missed": 0,
    "price_history": [],
    "status": "active"
@@ -97,16 +97,14 @@
    "mileage_km": 1000,
    "location": "台南市",
    "description": "年產 2.0L MT RS 2.0L 【欣榮汽車】2024年式 MAZDA MX-5 RS 6MT",
-   "images": [
-    "https://photo.8891.com.tw/2026/11/13/17945510189987618968.jpg"
-   ],
+   "images": [],
    "seller": null,
    "posted_at": null,
    "source": "8891",
    "source_name": "8891",
    "generation": "ND",
    "first_seen": "2026-11-13T19:45:43+00:00",
-   "last_seen": "2026-11-22T06:54:39+00:00",
+   "last_seen": "2026-11-22T19:44:30+00:00",
    "missed": 0,
    "price_history": [],
    "status": "active"
@@ -129,7 +127,7 @@
    "source_name": "abc好車網",
    "generation": "ND",
    "first_seen": "2026-11-11T19:38:48+00:00",
-   "last_seen": "2026-11-22T06:54:39+00:00",
+   "last_seen": "2026-11-22T19:44:30+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -156,7 +154,7 @@
    "generation": "ND",
    "first_seen": "2026-11-08T13:29:20+00:00",
    "last_seen": "2026-11-10T07:23:25+00:00",
-   "missed": 25,
+   "missed": 26,
    "price_history": [
     {
      "date": "2026-11-08T13:29:20+00:00",
@@ -183,7 +181,7 @@
    "generation": "ND",
    "first_seen": "2026-11-07T06:02:35+00:00",
    "last_seen": "2026-11-14T06:29:33+00:00",
-   "missed": 17,
+   "missed": 18,
    "price_history": [
     {
      "date": "2026-11-07T06:02:35+00:00",
@@ -209,7 +207,7 @@
    "source_name": "8891",
    "generation": "ND",
    "first_seen": "2026-11-06T19:29:53+00:00",
-   "last_seen": "2026-11-22T06:54:39+00:00",
+   "last_seen": "2026-11-22T19:44:30+00:00",
    "missed": 0,
    "price_history": [],
    "status": "active"
@@ -231,7 +229,7 @@
    "generation": "ND",
    "first_seen": "2026-11-06T06:52:34+00:00",
    "last_seen": "2026-11-19T20:41:34+00:00",
-   "missed": 5,
+   "missed": 6,
    "price_history": [
     {
      "date": "2026-11-09T22:24:46+00:00",
@@ -258,7 +256,7 @@
    "generation": "ND",
    "first_seen": "2026-11-05T19:59:26+00:00",
    "last_seen": "2026-11-07T06:02:35+00:00",
-   "missed": 33,
+   "missed": 34,
    "price_history": [
     {
      "date": "2026-11-05T19:59:26+00:00",
@@ -287,7 +285,7 @@
    "generation": "ND",
    "first_seen": "2026-11-04T19:48:04+00:00",
    "last_seen": "2026-11-14T06:29:33+00:00",
-   "missed": 17,
+   "missed": 18,
    "price_history": [],
    "status": "gone",
    "gone_at": "2026-11-14T22:28:27+00:00"
@@ -301,14 +299,16 @@
    "mileage_km": 15000,
    "location": "新北市",
    "description": "年產 2.0L MT RS 2.0L",
-   "images": [],
-   "seller": null,
+   "images": [
+    "https://photo.8891.com.tw/2026/11/02/17936113153786305615.jpg"
+   ],
+   "seller": "繽樂汽車",
    "posted_at": null,
    "source": "8891",
    "source_name": "8891",
    "generation": "ND",
    "first_seen": "2026-11-03T14:21:09+00:00",
-   "last_seen": "2026-11-22T06:54:39+00:00",
+   "last_seen": "2026-11-22T19:44:30+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -337,7 +337,7 @@
    "generation": "ND",
    "first_seen": "2026-11-03T14:21:09+00:00",
    "last_seen": "2026-11-05T06:53:00+00:00",
-   "missed": 37,
+   "missed": 38,
    "price_history": [
     {
      "date": "2026-11-03T14:21:09+00:00",
@@ -363,7 +363,7 @@
    "source_name": "8891",
    "generation": "ND",
    "first_seen": "2026-11-02T06:11:44+00:00",
-   "last_seen": "2026-11-22T06:54:39+00:00",
+   "last_seen": "2026-11-22T19:44:30+00:00",
    "missed": 0,
    "price_history": [],
    "status": "active"
@@ -377,16 +377,14 @@
    "mileage_km": 15000,
    "location": "新北市",
    "description": "年產 2.0L MT RS 2.0L 改裝品超多，現車免等車！想買一台玩具車不用四處找",
-   "images": [
-    "https://photo.8891.com.tw/2026/11/01/17935265646620696177.jpg"
-   ],
-   "seller": "繽樂汽車-阿翔",
+   "images": [],
+   "seller": null,
    "posted_at": null,
    "source": "8891",
    "source_name": "8891",
    "generation": "ND",
    "first_seen": "2026-11-01T13:29:20+00:00",
-   "last_seen": "2026-11-22T06:54:39+00:00",
+   "last_seen": "2026-11-22T19:44:30+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -414,7 +412,7 @@
    "source_name": "abc好車網",
    "generation": "ND",
    "first_seen": "2026-10-31T21:38:39+00:00",
-   "last_seen": "2026-11-22T06:54:39+00:00",
+   "last_seen": "2026-11-22T19:44:30+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -441,7 +439,7 @@
    "generation": "ND",
    "first_seen": "2026-10-30T13:00:10+00:00",
    "last_seen": "2026-11-01T22:05:45+00:00",
-   "missed": 45,
+   "missed": 46,
    "price_history": [
     {
      "date": "2026-10-30T13:00:10+00:00",
@@ -467,7 +465,7 @@
    "source_name": "8891",
    "generation": "ND",
    "first_seen": "2026-10-29T22:47:33+00:00",
-   "last_seen": "2026-11-22T06:54:39+00:00",
+   "last_seen": "2026-11-22T19:44:30+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -494,7 +492,7 @@
    "generation": "ND",
    "first_seen": "2026-10-29T22:47:33+00:00",
    "last_seen": "2026-11-08T22:09:51+00:00",
-   "missed": 28,
+   "missed": 29,
    "price_history": [
     {
      "date": "2026-10-29T22:47:33+00:00",
@@ -521,7 +519,7 @@
    "generation": "ND",
    "first_seen": "2026-10-29T13:07:00+00:00",
    "last_seen": "2026-11-07T21:54:07+00:00",
-   "missed": 31,
+   "missed": 32,
    "price_history": [
     {
      "date": "2026-10-29T13:07:00+00:00",
@@ -548,7 +546,7 @@
    "generation": "ND",
    "first_seen": "2026-10-29T05:52:24+00:00",
    "last_seen": "2026-11-08T06:06:40+00:00",
-   "missed": 30,
+   "missed": 31,
    "price_history": [
     {
      "date": "2026-10-29T05:52:24+00:00",
@@ -575,7 +573,7 @@
    "generation": "ND",
    "first_seen": "2026-10-27T18:12:14+00:00",
    "last_seen": "2026-11-09T06:39:45+00:00",
-   "missed": 27,
+   "missed": 28,
    "price_history": [
     {
      "date": "2026-10-27T18:12:14+00:00",
@@ -594,16 +592,14 @@
    "mileage_km": 84000,
    "location": "台北市",
    "description": "年產 ND1 2.0L 2016 Mazda MX-5｜自排｜售 66.8 萬",
-   "images": [
-    "https://photo.8891.com.tw/2026/10/25/17929401983177135962.jpg"
-   ],
-   "seller": "",
+   "images": [],
+   "seller": null,
    "posted_at": null,
    "source": "8891",
    "source_name": "8891",
    "generation": "ND",
    "first_seen": "2026-10-26T13:09:05+00:00",
-   "last_seen": "2026-11-22T06:54:39+00:00",
+   "last_seen": "2026-11-22T19:44:30+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -636,7 +632,7 @@
    "generation": "ND",
    "first_seen": "2026-10-23T04:55:47+00:00",
    "last_seen": "2026-11-04T06:30:01+00:00",
-   "missed": 39,
+   "missed": 40,
    "price_history": [
     {
      "date": "2026-10-23T04:55:47+00:00",
@@ -665,7 +661,7 @@
    "generation": "ND",
    "first_seen": "2026-10-21T11:54:31+00:00",
    "last_seen": "2026-11-09T22:24:46+00:00",
-   "missed": 26,
+   "missed": 27,
    "price_history": [
     {
      "date": "2026-10-21T11:54:31+00:00",
@@ -692,7 +688,7 @@
    "generation": "ND",
    "first_seen": "2026-10-19T22:23:38+00:00",
    "last_seen": "2026-10-24T11:06:13+00:00",
-   "missed": 73,
+   "missed": 74,
    "price_history": [],
    "status": "gone",
    "gone_at": "2026-10-24T20:53:07+00:00"
@@ -716,7 +712,7 @@
    "generation": "ND",
    "first_seen": "2026-10-17T20:39:13+00:00",
    "last_seen": "2026-11-15T18:53:47+00:00",
-   "missed": 13,
+   "missed": 14,
    "price_history": [],
    "status": "gone",
    "gone_at": "2026-11-16T22:08:44+00:00"
@@ -738,7 +734,7 @@
    "generation": "ND",
    "first_seen": "2026-10-16T04:36:09+00:00",
    "last_seen": "2026-11-06T19:29:53+00:00",
-   "missed": 34,
+   "missed": 35,
    "price_history": [
     {
      "date": "2026-10-16T04:36:09+00:00",
@@ -764,7 +760,7 @@
    "source_name": "8891",
    "generation": "ND",
    "first_seen": "2026-10-14T17:14:40+00:00",
-   "last_seen": "2026-11-22T06:54:39+00:00",
+   "last_seen": "2026-11-22T19:44:30+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -791,7 +787,7 @@
    "generation": "ND",
    "first_seen": "2026-10-13T00:44:30+00:00",
    "last_seen": "2026-10-27T05:10:32+00:00",
-   "missed": 63,
+   "missed": 64,
    "price_history": [],
    "status": "gone",
    "gone_at": "2026-10-27T18:12:14+00:00"
@@ -805,14 +801,16 @@
    "mileage_km": 2200,
    "location": "台南市",
    "description": "年產 2.0L MT 2.0L MX-5 35週年紀念版",
-   "images": [],
-   "seller": null,
+   "images": [
+    "https://photo.8891.com.tw/2026/10/11/17917133837688344788.jpg"
+   ],
+   "seller": "",
    "posted_at": null,
    "source": "8891",
    "source_name": "8891",
    "generation": "ND",
    "first_seen": "2026-10-11T12:55:10+00:00",
-   "last_seen": "2026-11-22T06:54:39+00:00",
+   "last_seen": "2026-11-22T19:44:30+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -852,7 +850,7 @@
    "source_name": "abc好車網",
    "generation": "ND",
    "first_seen": "2026-10-08T23:23:24+00:00",
-   "last_seen": "2026-11-22T06:54:39+00:00",
+   "last_seen": "2026-11-22T19:44:30+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -879,7 +877,7 @@
    "generation": "ND",
    "first_seen": "2026-10-03T16:20:36+00:00",
    "last_seen": "2026-10-27T05:10:32+00:00",
-   "missed": 63,
+   "missed": 64,
    "price_history": [],
    "status": "gone",
    "gone_at": "2026-10-27T18:12:14+00:00"
@@ -900,7 +898,7 @@
    "source_name": "8891",
    "generation": "ND",
    "first_seen": "2026-09-29T12:57:33+00:00",
-   "last_seen": "2026-11-22T06:54:39+00:00",
+   "last_seen": "2026-11-22T19:44:30+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -930,7 +928,7 @@
    "source_name": "8891",
    "generation": "ND",
    "first_seen": "2026-09-27T12:07:11+00:00",
-   "last_seen": "2026-11-22T06:54:39+00:00",
+   "last_seen": "2026-11-22T19:44:30+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -962,7 +960,7 @@
    "source_name": "abc好車網",
    "generation": "ND",
    "first_seen": "2026-09-23T10:45:45+00:00",
-   "last_seen": "2026-11-22T06:54:39+00:00",
+   "last_seen": "2026-11-22T19:44:30+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -990,7 +988,7 @@
    "source_name": "abc好車網",
    "generation": "ND",
    "first_seen": "2026-09-23T10:45:45+00:00",
-   "last_seen": "2026-11-22T06:54:39+00:00",
+   "last_seen": "2026-11-22T19:44:30+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -1018,7 +1016,7 @@
    "source_name": "abc好車網",
    "generation": "ND",
    "first_seen": "2026-09-23T10:45:45+00:00",
-   "last_seen": "2026-11-22T06:54:39+00:00",
+   "last_seen": "2026-11-22T19:44:30+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -1046,7 +1044,7 @@
    "source_name": "abc好車網",
    "generation": "ND",
    "first_seen": "2026-09-23T10:45:45+00:00",
-   "last_seen": "2026-11-22T06:54:39+00:00",
+   "last_seen": "2026-11-22T19:44:30+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -1074,7 +1072,7 @@
    "source_name": "abc好車網",
    "generation": "ND",
    "first_seen": "2026-09-23T10:45:45+00:00",
-   "last_seen": "2026-11-22T06:54:39+00:00",
+   "last_seen": "2026-11-22T19:44:30+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -1102,7 +1100,7 @@
    "source_name": "abc好車網",
    "generation": "ND",
    "first_seen": "2026-09-23T10:45:45+00:00",
-   "last_seen": "2026-11-22T06:54:39+00:00",
+   "last_seen": "2026-11-22T19:44:30+00:00",
    "missed": 0,
    "price_history": [
     {
@@ -1131,7 +1129,7 @@
    "generation": "ND",
    "first_seen": "2026-09-23T10:45:45+00:00",
    "last_seen": "2026-10-26T13:09:05+00:00",
-   "missed": 65,
+   "missed": 66,
    "price_history": [
     {
      "date": "2026-09-23T10:45:45+00:00",
@@ -1140,35 +1138,6 @@
    ],
    "status": "gone",
    "gone_at": "2026-10-27T05:10:32+00:00"
-  },
-  {
-   "id": "abccar-2235324",
-   "url": "https://www.abccar.com.tw/Car/2235324",
-   "title": "MAZDA MX-5 2.0 RF Skyactiv-G 2018年",
-   "price": 97.8,
-   "year": 2018,
-   "mileage_km": null,
-   "location": null,
-   "description": "~SUM漢欣汽車~ 2018年MAZDA 2.0 MX-5 RF版 跑3萬 原版，<p>實車在庫<br />2018年MAZDA 2.0 MX-5 RF<br />原版件<br />僅跑3萬公里<br />Ohlins避震器<br />RAYS ZE40鍛造鋁圈<br />犀牛皮包膜<br />全段排氣",
-   "images": [
-    "https://image.abccar.com.tw/carimages/images/0c832fce5f74f93c21a3e2dd47615bf3.jpg"
-   ],
-   "seller": "漢欣汽車",
-   "posted_at": null,
-   "source": "abccar",
-   "source_name": "abc好車網",
-   "generation": "ND",
-   "first_seen": "2026-09-23T10:45:45+00:00",
-   "last_seen": "2026-10-22T17:14:09+00:00",
-   "missed": 79,
-   "price_history": [
-    {
-     "date": "2026-09-23T10:45:45+00:00",
-     "price": 97.8
-    }
-   ],
-   "status": "gone",
-   "gone_at": "2026-10-23T11:43:41+00:00"
   },
   {
    "id": "8891-4803348",
@@ -1187,7 +1156,7 @@
    "generation": "ND",
    "first_seen": "2026-09-22T06:00:00+00:00",
    "last_seen": "2026-11-13T19:45:43+00:00",
-   "missed": 18,
+   "missed": 19,
    "price_history": [
     {
      "date": "2026-09-22T06:00:00+00:00",
@@ -1214,7 +1183,7 @@
    "generation": "ND",
    "first_seen": "2026-09-22T06:00:00+00:00",
    "last_seen": "2026-10-23T11:43:41+00:00",
-   "missed": 77,
+   "missed": 78,
    "price_history": [
     {
      "date": "2026-09-22T06:00:00+00:00",
